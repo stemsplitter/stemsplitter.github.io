@@ -11,7 +11,7 @@ Here's everything you need to know.
 
 ## What you're actually doing when you make a karaoke track
 
-People say "remove the vocal," but that's not quite what's happening. A stem splitter separates a song into its component parts: vocals, drums, bass, and everything else. You're pulling out the instrumental stem and keeping that.
+People say "remove the vocal," but that's not quite what's happening. A stem splitter separates a song into its component parts: vocals, drums, bass, and everything else. You're pulling out the instrumental stem and keeping that. This process is a practical application of [music source separation](https://en.wikipedia.org/wiki/Music_source_separation), a field of AI research that has made the technology genuinely usable for everyday musicians over the past few years.
 
 The distinction matters for one reason: the output quality depends on how cleanly the AI can identify and isolate the vocal. If the model misidentifies some guitar texture as part of the vocal, it pulls that out too. You get instrumental bleed (or vocal bleed going the other way). For most modern pop and hip-hop, this isn't a big issue, but it's worth knowing. [Why stems aren't perfect](/stem-splitter-artifacts-bleed/) covers this in more detail if you're curious about the mechanics.
 
@@ -53,7 +53,7 @@ Dense ambient or shoegaze recordings, where reverb is half the point, tend to be
 
 ## A note on the legal side
 
-Making a karaoke track for personal use at home is generally considered fair use in most jurisdictions. Singing along in your living room is fine, practicing for an audition with a backing track you made yourself is fine.
+Making a [karaoke](https://en.wikipedia.org/wiki/Karaoke) track for personal use at home is generally considered fair use in most jurisdictions. Singing along in your living room is fine, practicing for an audition with a backing track you made yourself is fine.
 
 Where it gets complicated: sharing the track publicly, uploading it, or using it commercially. The stems you create still contain the original copyrighted recording. Distributing an instrumental version of someone else's song without a license isn't legal, even if you created it yourself using a stem splitter.
 

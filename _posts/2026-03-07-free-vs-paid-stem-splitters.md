@@ -35,13 +35,13 @@ Professional workflows are where the math changes.
 
 If you're a producer working on 10 tracks a week and you need stems for each one, the queue wait and usage caps of a free tier become a real cost in time. Paid plans typically offer unlimited (or much higher) monthly processing, priority queuing, and batch upload. That's not a luxury for a working professional; it's just necessary.
 
-Output quality on paid tiers can be meaningfully better, particularly for complex material. Dense orchestral arrangements, jazz recordings with a lot of harmonic overlap, lo-fi recordings with noise floor issues: these are situations where the better model makes an audible difference. For vocal isolation from a straightforward pop track, you might not notice. For a live jazz recording with multiple soloists, you probably will.
+Output quality on paid tiers can be meaningfully better, particularly for complex material. Dense orchestral arrangements, jazz recordings with a lot of harmonic overlap, lo-fi recordings with noise floor issues: these are situations where the better model makes an audible difference. Progress in [music source separation](https://en.wikipedia.org/wiki/Music_source_separation) research is real, but the gap between an older model and a current one is most visible on exactly this kind of difficult material. For vocal isolation from a straightforward pop track, you might not notice. For a live jazz recording with multiple soloists, you probably will.
 
 Commercial licensing is another real consideration. Free tiers sometimes have terms that limit commercial use of the output. If you're using stems in a professional context, track, sync license, or live performance, the paid tier usually comes with clearer rights.
 
 ## UVR5: the notable exception
 
-[Ultimate Vocal Remover (UVR5)](https://github.com/Anjok07/ultimatevocalremovergui) is free desktop software and it's genuinely powerful. You can run multiple models, switch between them, tune settings, and process locally without upload limits. For someone who wants maximum control and quality without paying a subscription, it's the real answer.
+[Ultimate Vocal Remover (UVR5)](https://github.com/Anjok07/ultimatevocalremovergui) is free desktop software and it's genuinely powerful. It bundles access to open-source models including [Demucs](https://github.com/facebookresearch/demucs) from Meta AI Research and various MDX-Net variants. You can run multiple models, switch between them, tune settings, and process locally without upload limits. For someone who wants maximum control and quality without paying a subscription, it's the real answer.
 
 The trade-off is the learning curve. UVR5 is not a simple drag-and-drop interface. It requires installation, some understanding of the different models available, and willingness to experiment with settings. If you're comfortable in that environment, it's excellent. If you just want to paste in a link and get stems back in 60 seconds, it's not the right tool.
 

@@ -5,7 +5,7 @@ date: 2026-01-07
 description: "Once you've split your stems, getting them into a DAW without phase issues or timing drift takes a bit of care. Here's how to do it right."
 ---
 
-Splitting stems is the easy part. Getting them into your DAW in a way that's actually usable for production takes a bit more thought, and a few small mistakes here cause problems that are annoying to diagnose later.
+Splitting stems is the easy part. Getting them into your [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation) in a way that's actually usable for production takes a bit more thought, and a few small mistakes here cause problems that are annoying to diagnose later.
 
 This isn't about which DAW you use. The workflow is the same in Logic, Ableton, FL Studio, or anything else.
 
@@ -23,7 +23,7 @@ The other thing to check before you even open your DAW: the sample rate of your 
 
 Create a new session and set the tempo to match the original track before you import anything.
 
-This matters more than people think. If your session tempo is wrong by even a few BPM, the stems will drift out of sync with any loops, MIDI patterns, or additional recordings you add. There are a few ways to find the tempo: use a tap-tempo tool, run the track through a BPM analyzer, or use your DAW's tempo detection (Ableton's Analyze function is good for this, and Ableton's own [stem separation docs](https://www.ableton.com/en/live-manual/12/stem-separation/) cover how they handle this natively in Live 12).
+This matters more than people think. If your session tempo is wrong by even a few BPM, the stems will drift out of sync with any loops, MIDI patterns, or additional recordings you add. There are a few ways to find the tempo: use a tap-tempo tool, run the track through a BPM analyzer, or use your DAW's tempo detection (Ableton's Analyze function is good for this, and Ableton's own [stem separation docs](https://www.ableton.com/en/live-manual/12/stem-separation/) cover how they handle this natively in Live 12). Apple has a similar walkthrough in the [Logic Pro stem splitter documentation](https://support.apple.com/guide/logicpro/stem-splitter-overview-lp10289b6b6/mac) if that's your setup.
 
 Set the project tempo, then create a stereo audio track and import the original full mix to use as a reference. Keep it muted once you've confirmed the session length. You'll want it there to compare against.
 

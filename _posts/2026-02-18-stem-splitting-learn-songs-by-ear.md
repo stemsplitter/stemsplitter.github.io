@@ -33,7 +33,7 @@ The workflow is pretty simple once you have your stems. Run the song through a s
 
 A few things that help:
 
-- **Slow it down.** Most modern audio players can reduce playback speed without changing pitch. Transcribe at 75% speed, then work back up to tempo. Software like Transcribe! or Amazing Slow Downer is built specifically for this, and both let you loop sections while reducing speed.
+- **Slow it down.** Most modern audio players can reduce playback speed without changing pitch. Transcribe at 75% speed, then work back up to tempo. Software like [Transcribe!](https://www.seventhstring.com/xscribe/overview.html) or Amazing Slow Downer is built specifically for this, and both let you loop sections while reducing speed.
 - **Loop the hard part.** Set a loop around the 4 bars you can't figure out and just live in that section for a few minutes before moving on.
 - **Layer stems gradually.** Start with the isolated instrument, then add bass, then add drums. This bridges the gap between the isolated version and the full mix so you're not caught off guard when everything comes back.
 - **Don't over-isolate.** Sometimes you actually need the harmonic context. If you're learning a bass line, keeping the chord stem playing helps you hear how the bass relates to the chords above it, not just what the notes are.
@@ -56,6 +56,6 @@ This works well for audition prep, for singers learning harmonies, and for vocal
 
 For drummers specifically, there's also a dedicated post on [extracting drum stems](/how-to-extract-drum-stems/) if you want to go deeper on that particular use case.
 
-Stem splitting for music practice isn't a replacement for traditional ear training. You still need to do the work of internalizing what you're hearing, identifying intervals, building musical memory. But it removes the biggest obstacle: not being able to clearly hear what you're trying to learn. The [Stem Splitter FAQ](/faq/) has more on what formats and models are available if you're just getting started.
+Stem splitting for music practice isn't a replacement for traditional [ear training](https://en.wikipedia.org/wiki/Ear_training). You still need to do the work of internalizing what you're hearing, identifying intervals, building musical memory. But it removes the biggest obstacle: not being able to clearly hear what you're trying to learn. The [Stem Splitter FAQ](/faq/) has more on what formats and models are available if you're just getting started.
 
 [StemSplit.io](https://stemsplit.io) is a good first stop if you want to try this without installing anything. Upload a track, get the stems, and start a practice session. The interface is simple enough that you're not spending time figuring out the tool instead of learning the music.

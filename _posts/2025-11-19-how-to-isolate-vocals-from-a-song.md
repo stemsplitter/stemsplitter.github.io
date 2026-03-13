@@ -7,7 +7,7 @@ description: "Vocal isolation with a stem splitter works well on most commercial
 
 Say you've got a track, something commercially released with a clean mix, and you want just the vocal. Maybe you're making a remix, maybe you're building a karaoke version, maybe you want to analyze the performance or do some pitch correction work on a sample. Whatever the reason, you want clean vocal audio and you want it without spending hours in a DAW trying to do it by hand.
 
-AI stem splitting is genuinely good at this now. Not perfect, but good enough to be useful on most material if you go about it the right way.
+AI stem splitting is genuinely good at this now. Not perfect, but good enough to be useful on most material if you go about it the right way. The underlying technology, formally called [music source separation](https://en.wikipedia.org/wiki/Music_source_separation), has advanced substantially since 2020 and the gap between research benchmarks and real-world usability has closed considerably.
 
 ## What your source file does to the result
 
@@ -25,7 +25,7 @@ Not all separation models treat vocals equally. As covered in the [models post](
 
 For most commercial pop, hip-hop, R&B, or electronic tracks, HTDemucs produces very clean vocal stems. The model has been trained extensively on mixed-source music and handles lead vocals well across most production styles.
 
-VR Architecture models, particularly fine-tuned versions available in tools like [UVR5](https://github.com/Anjok07/ultimatevocalremovergui), can outperform HTDemucs specifically on vocal separation. If you're doing this regularly and quality is critical, it's worth testing a VR model on your material. The trade-off is that VR models sometimes produce a slightly thinner or more processed-sounding vocal, depending on the fine-tune.
+VR Architecture models, particularly fine-tuned versions available in tools like [UVR5](https://github.com/Anjok07/ultimatevocalremovergui), can outperform HTDemucs specifically on vocal separation. Apple's Logic Pro also ships with a [built-in stem splitter](https://support.apple.com/guide/logicpro/stem-splitter-overview-lp10289b6b6/mac) as of version 11, which is convenient if you're already in that ecosystem, though dedicated tools tend to offer more model flexibility. If you're doing this regularly and quality is critical, it's worth testing a VR model on your material. The trade-off is that VR models sometimes produce a slightly thinner or more processed-sounding vocal, depending on the fine-tune.
 
 [4-stem vs 6-stem separation]({{ "/stem-splitting-for-djs/" | relative_url }}) doesn't matter much for vocal isolation specifically. You want the vocal stem, and that stem is consistently represented across both. Go with 4-stem unless you have a reason to do otherwise. The [4-stem vs 6-stem post]({{ "/4-stem-vs-6-stem-separation/" | relative_url }}) goes into why.
 
