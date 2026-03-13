@@ -3,6 +3,7 @@ layout: post
 title: "Why Stem Splitters Aren't Perfect: Bleed, Artifacts, and What Causes Them"
 date: 2025-10-08
 description: "Stem splitters produce bleed and artifacts because of frequency overlap. Here's what causes these problems and when they matter most."
+tags: Guide
 ---
 
 If you've run a track through a stem splitter and noticed that the vocal stem has a faint hi-hat in it, or the drum stem has a ghost of the bass guitar, you've encountered bleed. It's not a glitch, it's not a sign of a broken tool, and it doesn't mean the technology doesn't work. It's an inherent byproduct of what the AI is actually doing.
@@ -59,7 +60,7 @@ There's also an irreducible limitation: the problem is mathematically underdeter
 
 You're not going to eliminate bleed entirely. But you can minimize it and work with it rather than against it.
 
-**Choose the right model.** HTDemucs is the current best general-purpose option for most material. But for certain use cases, fine-tuned variants of MDX-Net outperform it on vocals specifically. Running the same track through 2 different models and comparing is a legitimate strategy, it doesn't take long and the difference is sometimes significant. Tools like [UVR5 (Ultimate Vocal Remover)](https://github.com/Anjok07/ultimatevocalremovergui) let you do exactly this with fine-grained model control.
+**Choose the right model.** HTDemucs is the current best general-purpose option for most material. But for certain use cases, fine-tuned variants of MDX-Net outperform it on vocals specifically. Running the same track through 2 different models and comparing is a legitimate strategy, it doesn't take long and the difference is sometimes significant. Tools like [UVR5 (Ultimate Vocal Remover)](https://github.com/Anjok07/ultimatevocalremovergui) let you do exactly this with fine-grained model control, while browser-based tools like [StemSplit.io](https://stemsplit.io) automatically apply a well-tuned model without any setup.
 
 **Use higher stem counts when isolation matters.** Going from 4 stems to 6 stems forces the model to separate guitar and piano from the "other" bucket, which can reduce bleed in all the stems because the model is working with more specific targets. See [4-stem vs 6-stem separation]({{ '/4-stem-vs-6-stem-separation/' | relative_url }}) for when this is actually worth doing.
 

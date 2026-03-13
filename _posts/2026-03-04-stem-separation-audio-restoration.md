@@ -3,6 +3,7 @@ layout: post
 title: "AI Stem Separation for Audio Restoration: An Honest Look at What Works"
 date: 2026-03-04
 description: "Stem separation can help with audio restoration in specific situations. Here's when it actually works and when you need proper restoration tools instead."
+tags: Tutorial
 ---
 
 Stem separation and audio restoration are two different things. They occasionally overlap in useful ways, but treating one as a substitute for the other will cost you time and probably make the audio worse. Here's an accurate picture of where the Venn diagram actually overlaps.
@@ -53,7 +54,7 @@ If your audio has significant noise floor problems, clicks, pops, crackle, sever
 
 Stem splitting works by learning what instruments sound like and separating them. Restoration tools work by identifying unwanted artifacts and removing them. These are different problems with different solutions, and there's not much crossover.
 
-That said, combining both workflows does sometimes make sense. Run restoration on the source file first to remove noise floor and clicks, then use stem splitting on the cleaned audio. In that order, you're giving the separation model cleaner input, which produces better output. Doing it the other way around (split first, then restore each stem) generally produces worse results because you're working with audio that's already been degraded by the separation process.
+That said, combining both workflows does sometimes make sense. Run restoration on the source file first to remove noise floor and clicks, then use stem splitting on the cleaned audio via a tool like [StemSplit.io](https://stemsplit.io). In that order, you're giving the separation model cleaner input, which produces better output. Doing it the other way around (split first, then restore each stem) generally produces worse results because you're working with audio that's already been degraded by the separation process.
 
 The [Complete Guide to Stem Splitting](/complete-guide-stem-splitting/) covers the fundamentals if you want a broader picture of what these tools are and aren't designed to do. For restoration-specific questions, the [Stem Splitter FAQ](/faq/) addresses some of the common misconceptions about what separation can fix.
 

@@ -3,6 +3,7 @@ layout: post
 title: "How to Isolate Vocals From a Song and Actually Keep the Quality"
 date: 2025-11-19
 description: "Vocal isolation with a stem splitter works well on most commercial tracks. Here's how to get the cleanest result and what to expect."
+tags: Tutorial
 ---
 
 Say you've got a track, something commercially released with a clean mix, and you want just the vocal. Maybe you're making a remix, maybe you're building a karaoke version, maybe you want to analyze the performance or do some pitch correction work on a sample. Whatever the reason, you want clean vocal audio and you want it without spending hours in a DAW trying to do it by hand.

@@ -3,6 +3,7 @@ layout: post
 title: "Using Stem Splitting to Learn Songs by Ear: A Practical Approach"
 date: 2026-02-18
 description: "Isolating individual instruments with a stem splitter makes learning songs by ear much faster. Here's how to use it effectively for music practice."
+tags: Tutorial
 ---
 
 Learning a song by ear used to mean rewinding the same 10-second clip forty times, squinting your ears at a crowded mix, trying to pick out one instrument from everything happening at once. Stem splitting changes that. Not by doing the work for you, but by letting you actually hear what you're trying to learn.

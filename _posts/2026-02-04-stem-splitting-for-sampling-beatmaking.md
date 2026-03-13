@@ -3,6 +3,7 @@ layout: post
 title: "How Producers Use Stem Splitting for Sampling and Original Beats"
 date: 2026-02-04
 description: "Stem splitting changed sampling by letting producers isolate individual elements from finished tracks. Here's how to use it in a beatmaking workflow."
+tags: Tutorial
 ---
 
 There's a real before and after with stem splitting in sample-based production. Before, you needed the original session, or you were chopping from the full mix and working around everything else in the track. Now, any finished recording is potential source material for individual elements. That's a different kind of relationship with a record collection.

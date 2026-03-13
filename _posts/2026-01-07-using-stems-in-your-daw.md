@@ -3,6 +3,7 @@ layout: post
 title: "Bringing Stems Into Your DAW: A Workflow That Actually Makes Sense"
 date: 2026-01-07
 description: "Once you've split your stems, getting them into a DAW without phase issues or timing drift takes a bit of care. Here's how to do it right."
+tags: Tutorial
 ---
 
 Splitting stems is the easy part. Getting them into your [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation) in a way that's actually usable for production takes a bit more thought, and a few small mistakes here cause problems that are annoying to diagnose later.

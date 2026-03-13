@@ -3,6 +3,7 @@ layout: post
 title: "Demucs, MDX-Net, and HTDemucs: The AI Models That Power Stem Splitters"
 date: 2025-11-05
 description: "Most stem splitters use the same handful of AI models. Here's what Demucs, MDX-Net, and HTDemucs actually are and how they differ."
+tags: Guide
 ---
 
 There are dozens of stem splitter apps, websites, and plugins out there. Most of them are running the same handful of AI models underneath. The app name on the label matters a lot less than which model is actually doing the work.

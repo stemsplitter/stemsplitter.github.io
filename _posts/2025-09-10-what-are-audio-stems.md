@@ -3,6 +3,7 @@ layout: post
 title: "What Are Audio Stems? What Producers Mean When They Say Stems"
 date: 2025-09-10
 description: "Audio stems are individual instrument tracks separated from a finished mix. Here's what they are, where the term comes from, and why producers care."
+tags: Guide
 ---
 
 You've heard producers and engineers throw around the word "stems" but maybe you've never been entirely sure what it means, or whether it means the same thing to everyone using it. It doesn't always. The term gets used loosely, and that causes confusion.
@@ -64,7 +65,7 @@ AI stem splitting inverts the whole relationship. You start with the finished st
 
 The quality isn't perfect. There's bleed between stems, meaning trace amounts of the drums might show up in the vocal stem, and some artifacts are unavoidable. But for most use cases, the separation is more than good enough, and the access it provides is genuinely new.
 
-Any producer, for the first time, can extract a vocal from a song they didn't make. Any musician can isolate the bassline from a track they're learning. Any DJ can get a cappella versions of songs that never had official releases.
+Any producer, for the first time, can extract a vocal from a song they didn't make. Any musician can isolate the bassline from a track they're learning. Any DJ can get a cappella versions of songs that never had official releases. Tools like [StemSplit.io](https://stemsplit.io) make this accessible without any installation or technical setup.
 
 [The complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers the full landscape of tools and use cases. If you're specifically looking to work with stems in a DAW, [bringing stems into your DAW]({{ '/using-stems-in-your-daw/' | relative_url }}) covers the practical workflow.
 

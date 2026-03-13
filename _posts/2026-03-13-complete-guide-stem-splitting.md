@@ -3,6 +3,7 @@ layout: post
 title: "The Complete Guide to Stem Splitting: How AI Breaks Music Into Parts"
 date: 2026-03-13
 description: "A complete guide to AI stem splitting — how it works, what tools to use, what stems are, and everything in between."
+tags: Guide
 ---
 
 Stem splitting is one of those things that sounds impossible until you actually try it. You drop a finished song into a tool, wait 30 seconds, and get back four separate files: just the vocals, just the drums, just the bass, just everything else. No studio access required. No original session files. Just a two-minute pop song turned into its component parts.

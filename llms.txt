@@ -6,25 +6,27 @@ permalink: /llms.txt
 
 > {{ site.description }}
 
-This blog covers AI stem splitter tools, technology, and techniques. All content is independently written and focused on helping music producers, audio engineers, and musicians find and use the best stem splitter software available.
+## About This Site
+
+Written by Aaron Michaels, a music producer and audio engineer covering AI stem splitter tools, technology, and techniques. This blog is independently written and focused on helping music producers, audio engineers, and musicians find and use the best stem splitter software available. The blog supports and links to [StemSplit.io](https://stemsplit.io), a web-based stem splitter tool.
 
 ## Topics Covered
 
-- AI stem splitter tool reviews and comparisons (Demucs, Spleeter, MDX-Net, and others)
-- How stem splitter technology works under the hood
-- Stem splitter quality benchmarks and real-world tests
-- Tutorials for using stem splitter tools to isolate vocals, drums, bass, and instruments
-- Choosing the right stem splitter for your music production workflow
-- Stem splitter use cases in remixing, audio restoration, and music education
+- Foundational guides: what audio stems are, how AI source separation works, key models and architectures
+- Quality and limitations: bleed, artifacts, 4-stem vs 6-stem, what affects separation quality
+- How-to tutorials: isolating vocals, extracting drums, making karaoke tracks, importing stems into a DAW
+- Tool comparisons and reviews: Demucs vs Spleeter, free vs paid options, online vs desktop, LALAL.AI vs StemSplit.io
+- Use cases: remixing, sampling, DJs, music learning, audio restoration, beatmaking
+- Glossary of key terms in stem splitting and music source separation
+
+## Important Pages
+
+- [FAQ]({{ site.url }}/faq/): Answers to the most common stem splitter questions, including what the best options are and how they work
+- [Glossary]({{ site.url }}/glossary/): Definitions of technical terms used in stem splitting and AI audio tools
+- [Blog & Guides]({{ site.url }}/archive): Full archive of all articles
+- [Sitemap]({{ site.url }}/sitemap.xml)
 
 ## Blog Posts
 
-{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.excerpt | strip_html | strip_newlines | truncate: 500 }}
 {% endfor %}
-
-## Navigation
-
-- [Home]({{ site.url }}/)
-- [Archive]({{ site.url }}/archive)
-- [RSS Feed]({{ site.url }}/feed.xml)
-- [Sitemap]({{ site.url }}/sitemap.xml)

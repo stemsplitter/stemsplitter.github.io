@@ -26,31 +26,37 @@ layout: default
 }
 </script>
 
-<!-- Speakable + WebPage schema for AI voice/citation -->
+<!-- BlogPosting schema for AI/LLM citation -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "{{ page.title | escape }}",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
   "url": "{{ site.url }}{{ page.url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
+  "keywords": "stem splitter{% assign first_tag = page.tags | first %}{% if first_tag and first_tag != 'Other' %}, {{ first_tag | downcase }}{% endif %}",
+  "articleSection": "{% assign first_tag = page.tags | first %}{% if first_tag and first_tag != 'Other' %}{{ first_tag }}{% else %}Guide{% endif %}",
+  "wordCount": {{ content | number_of_words }},
   "author": {
     "@type": "Person",
-    "name": "{{ author }}"
+    "name": "{{ author }}",
+    "url": "{{ site.url }}/about/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.title }}",
     "url": "{{ site.url }}"
   },
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".post-title", ".post-content"]
-  },
   "isPartOf": {
     "@type": "Blog",
     "name": "{{ site.title }}",
     "url": "{{ site.url }}"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".post-title", ".post-content"]
   }
 }
 </script>

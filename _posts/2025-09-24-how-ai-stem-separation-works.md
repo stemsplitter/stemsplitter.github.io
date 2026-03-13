@@ -3,6 +3,7 @@ layout: post
 title: "How AI Stem Separation Actually Works (Without the Jargon)"
 date: 2025-09-24
 description: "AI stem separation uses neural networks trained on multi-track recordings to pull apart a stereo mix. Here's how it actually works."
+tags: Guide
 ---
 
 Most explanations of AI stem separation either skip the technical details entirely or bury you in academic terminology. Neither is particularly useful if you're trying to understand why the tools work the way they do, why they fail where they fail, and which ones you should actually be using.
@@ -83,4 +84,4 @@ But even these scores reflect a fundamental ceiling: the problem is inherently u
 
 The different models available ([Demucs, MDX-Net, HTDemucs and others]({{ '/demucs-mdxnet-htdemucs-models/' | relative_url }})) have different strengths depending on the genre and the specific stem you're trying to extract. Choosing the right model for your material makes a measurable difference in output quality.
 
-And if you want to just get started without going deep on model selection, the [complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers which tools to use and when.
+And if you want to just get started without going deep on model selection, [StemSplit.io](https://stemsplit.io) handles model selection for you and the [complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers which tools to use and when.
