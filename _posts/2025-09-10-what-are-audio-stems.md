@@ -60,12 +60,12 @@ For most remix and production purposes, stems are more useful than raw multitrac
 
 Before AI, you needed the original session to get stems. If you wanted to remix a classic track from the 1970s, you were out of luck unless the record label had the multitracks in a vault somewhere and was willing to let you access them.
 
-AI stem splitting inverts the whole relationship. You start with the finished stereo mix and work backward, extracting approximations of what the original stems sounded like. [How AI stem separation works]({{ '/2025/09/24/how-ai-stem-separation-works.html' | relative_url }}) gets into the technical detail, but the practical result is that you can now generate working stems from any song you have a recording of.
+AI stem splitting inverts the whole relationship. You start with the finished stereo mix and work backward, extracting approximations of what the original stems sounded like. [How AI stem separation works]({{ '/how-ai-stem-separation-works/' | relative_url }}) gets into the technical detail, but the practical result is that you can now generate working stems from any song you have a recording of.
 
 The quality isn't perfect. There's bleed between stems, meaning trace amounts of the drums might show up in the vocal stem, and some artifacts are unavoidable. But for most use cases, the separation is more than good enough, and the access it provides is genuinely new.
 
 Any producer, for the first time, can extract a vocal from a song they didn't make. Any musician can isolate the bassline from a track they're learning. Any DJ can get a cappella versions of songs that never had official releases.
 
-[The complete guide to stem splitting]({{ '/2026/03/13/complete-guide-stem-splitting.html' | relative_url }}) covers the full landscape of tools and use cases. If you're specifically looking to work with stems in a DAW, [bringing stems into your DAW]({{ '/2026/01/07/using-stems-in-your-daw.html' | relative_url }}) covers the practical workflow.
+[The complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers the full landscape of tools and use cases. If you're specifically looking to work with stems in a DAW, [bringing stems into your DAW]({{ '/using-stems-in-your-daw/' | relative_url }}) covers the practical workflow.
 
 The underlying technology draws on decades of academic research in [music source separation](https://en.wikipedia.org/wiki/Music_source_separation), but it's the recent deep learning approaches, especially Meta AI's [Demucs project](https://github.com/facebookresearch/demucs), that pushed quality to the point where these tools became actually useful for everyday music production.

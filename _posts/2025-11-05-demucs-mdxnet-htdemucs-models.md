@@ -17,7 +17,7 @@ This means two apps that look totally different on the surface might be producin
 
 When you're comparing stem splitters, ask which model they're using. If they don't tell you, that's worth knowing too.
 
-The [complete guide to stem splitting]({{ "/2026/03/13/complete-guide-stem-splitting.html" | relative_url }}) covers how these tools fit into broader workflows. But if you want to understand what's actually happening under the hood, the models are where to start. The [how AI stem separation works]({{ "/2025/09/24/how-ai-stem-separation-works.html" | relative_url }}) post goes into the underlying mechanics in more detail.
+The [complete guide to stem splitting]({{ "/complete-guide-stem-splitting/" | relative_url }}) covers how these tools fit into broader workflows. But if you want to understand what's actually happening under the hood, the models are where to start. The [how AI stem separation works]({{ "/how-ai-stem-separation-works/" | relative_url }}) post goes into the underlying mechanics in more detail.
 
 ## Where Demucs came from
 
@@ -57,7 +57,7 @@ This is where it gets practical. Not every model is equally good at every stem.
 
 **VR Architecture models** (popularized through [UVR5](https://github.com/Anjok07/ultimatevocalremovergui)) are a separate family worth knowing about. These are often used for vocal isolation specifically, and fine-tuned versions of VR Architecture models perform very well on clean, mastered pop material. If your primary goal is getting the cleanest possible vocal stem from a commercially released track, a VR Architecture model might outperform HTDemucs on that specific task.
 
-The [artifacts and bleed post]({{ "/2025/10/08/stem-splitter-artifacts-bleed.html" | relative_url }}) covers why no model produces perfect results, regardless of architecture.
+The [artifacts and bleed post]({{ "/stem-splitter-artifacts-bleed/" | relative_url }}) covers why no model produces perfect results, regardless of architecture.
 
 ## Why most web tools don't let you choose
 

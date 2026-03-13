@@ -43,13 +43,13 @@ The thing to verify is that all stems start at exactly the same point in your ti
 
 To check: zoom all the way into bar 1 in your DAW and confirm every stem's waveform starts at the same position on the timeline. They should all line up to the exact sample. If they don't, nudge them back into alignment.
 
-[What are audio stems?](/2025/09/10/what-are-audio-stems.html) covers the underlying concepts if you want a clearer picture of why phase coherence matters when working with separated tracks.
+[What are audio stems?](/what-are-audio-stems/) covers the underlying concepts if you want a clearer picture of why phase coherence matters when working with separated tracks.
 
 ## Working with what you get
 
 Treat stems as raw material, not finished tracks.
 
-The vocal stem will almost certainly need some processing before it sits right in a mix. The drum stem may have low-end bleed from the bass, especially on the kick. The bass stem can have thump from the kick bleed going the other way. These are properties of how source separation works, not signs that you did something wrong. [How AI stem separation actually works](/2025/09/24/how-ai-stem-separation-works.html) explains why this bleed is essentially unavoidable with current models.
+The vocal stem will almost certainly need some processing before it sits right in a mix. The drum stem may have low-end bleed from the bass, especially on the kick. The bass stem can have thump from the kick bleed going the other way. These are properties of how source separation works, not signs that you did something wrong. [How AI stem separation actually works](/how-ai-stem-separation-works/) explains why this bleed is essentially unavoidable with current models.
 
 Light high-pass filtering on everything except bass and drums helps clean up unwanted low-end. A gentle low-pass on the bass stem can reduce kick bleed without affecting the fundamental. On the vocal stem, a bit of de-essing and a gentle reverb tail removal can help it sit more naturally.
 
@@ -61,14 +61,14 @@ Once everything is imported and aligned, the fun part begins.
 
 Swapping the drum stem is one of the most effective moves. Mute the original drum stem and drop in a different loop or sample at the same tempo. The vocal and bass stems continue playing as they were, but the rhythmic foundation is entirely new. This is a fast way to reinterpret a track.
 
-Muting the bass stem and replacing it with an original bassline gives you the most creative control over the low end. You keep the drums and the feel of the original, but you're writing the bass part yourself. That's a genuinely useful technique for [remixing and beatmaking](/2026/02/04/stem-splitting-for-sampling-beatmaking.html).
+Muting the bass stem and replacing it with an original bassline gives you the most creative control over the low end. You keep the drums and the feel of the original, but you're writing the bass part yourself. That's a genuinely useful technique for [remixing and beatmaking](/stem-splitting-for-sampling-beatmaking/).
 
 Using the vocal stem from one track and the instrumental elements from another is where things get interesting. It requires careful key and tempo matching, but a well-chosen combination can produce something that sounds entirely original.
 
-If you're [building a DJ set around pre-split stems](/2026/01/21/stem-splitting-for-djs.html), the same import principles apply, you just end up with a library of individual elements rather than a single project.
+If you're [building a DJ set around pre-split stems](/stem-splitting-for-djs/), the same import principles apply, you just end up with a library of individual elements rather than a single project.
 
-For drum-focused work, [how to extract drum stems](/2025/12/03/how-to-extract-drum-stems.html) covers what to expect from the drum stem specifically, including how much bleed to expect from kick and room mic artifacts.
+For drum-focused work, [how to extract drum stems](/how-to-extract-drum-stems/) covers what to expect from the drum stem specifically, including how much bleed to expect from kick and room mic artifacts.
 
 ---
 
-The [complete guide to stem splitting](/2026/03/13/complete-guide-stem-splitting.html) has a broader overview of the whole process if you're early in figuring out how this fits into your workflow. The DAW side of things rewards a bit of upfront organization, it's faster to set up properly the first time than to sort out alignment and naming issues later.
+The [complete guide to stem splitting](/complete-guide-stem-splitting/) has a broader overview of the whole process if you're early in figuring out how this fits into your workflow. The DAW side of things rewards a bit of upfront organization, it's faster to set up properly the first time than to sort out alignment and naming issues later.

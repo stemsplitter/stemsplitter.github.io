@@ -13,7 +13,7 @@ Here's everything you need to know.
 
 People say "remove the vocal," but that's not quite what's happening. A stem splitter separates a song into its component parts: vocals, drums, bass, and everything else. You're pulling out the instrumental stem and keeping that.
 
-The distinction matters for one reason: the output quality depends on how cleanly the AI can identify and isolate the vocal. If the model misidentifies some guitar texture as part of the vocal, it pulls that out too. You get instrumental bleed (or vocal bleed going the other way). For most modern pop and hip-hop, this isn't a big issue, but it's worth knowing. [Why stems aren't perfect](/2025/10/08/stem-splitter-artifacts-bleed.html) covers this in more detail if you're curious about the mechanics.
+The distinction matters for one reason: the output quality depends on how cleanly the AI can identify and isolate the vocal. If the model misidentifies some guitar texture as part of the vocal, it pulls that out too. You get instrumental bleed (or vocal bleed going the other way). For most modern pop and hip-hop, this isn't a big issue, but it's worth knowing. [Why stems aren't perfect](/stem-splitter-artifacts-bleed/) covers this in more detail if you're curious about the mechanics.
 
 The bottom line: you're not deleting the singer, you're extracting everything that isn't the singer. Same result, slightly different way of thinking about it.
 
@@ -37,7 +37,7 @@ Some tools give you the option to download a pre-made no-vocals mix. If that's a
 
 That's it. No settings to fiddle with, no audio engineering knowledge required.
 
-If you want more control over what's in your instrumental, like keeping a background vocal or removing a secondary voice, you can get into that. [How to isolate vocals from a song](/2025/11/19/how-to-isolate-vocals-from-a-song.html) goes deeper on the vocal separation side.
+If you want more control over what's in your instrumental, like keeping a background vocal or removing a secondary voice, you can get into that. [How to isolate vocals from a song](/how-to-isolate-vocals-from-a-song/) goes deeper on the vocal separation side.
 
 ## Which songs work well and which don't
 
@@ -65,7 +65,7 @@ The most immediate use is obvious: play it and sing along.
 
 If the song is in a key that doesn't quite fit your voice, most media players and music apps let you shift the pitch without changing the speed. VLC, foobar2000, and GarageBand all do this. A semitone or two in either direction makes a big difference.
 
-You can also adjust tempo independently of pitch in most apps if you're learning the song and need it slower. This is especially useful for practicing complex passages, which connects to something [using stem splitting to learn songs by ear](/2026/02/18/stem-splitting-learn-songs-by-ear.html) covers in more depth.
+You can also adjust tempo independently of pitch in most apps if you're learning the song and need it slower. This is especially useful for practicing complex passages, which connects to something [using stem splitting to learn songs by ear](/stem-splitting-learn-songs-by-ear/) covers in more depth.
 
 If you need a physical disc for a karaoke machine, you can burn the audio to a standard audio CD using any burning software. The track will play on any CD-compatible karaoke system.
 
@@ -73,4 +73,4 @@ For practice recordings, set up your phone or computer microphone, start the ins
 
 ---
 
-The [complete guide to stem splitting](/2026/03/13/complete-guide-stem-splitting.html) is a good starting point if you want to understand more about what's happening under the hood. And if you're ready to just make the track, [StemSplit.io](https://stemsplit.io) is where to start. Upload, separate, download. No account required.
+The [complete guide to stem splitting](/complete-guide-stem-splitting/) is a good starting point if you want to understand more about what's happening under the hood. And if you're ready to just make the track, [StemSplit.io](https://stemsplit.io) is where to start. Upload, separate, download. No account required.

@@ -27,7 +27,7 @@ From the model's perspective, these two sources are in the same spectral neighbo
 
 The practical result: your drum stem often has some bass bleed in it, and your bass stem often has some kick bleed in it. On a clean electronic production where the kick and bass are well-separated in frequency, this can be almost imperceptible. On a track where the kick and bass are fighting for the same 80Hz territory, the bleed can be significant.
 
-The [artifacts and bleed post]({{ "/2025/10/08/stem-splitter-artifacts-bleed.html" | relative_url }}) covers the general causes of bleed in more depth, and the kick-bass problem is one of the most common examples.
+The [artifacts and bleed post]({{ "/stem-splitter-artifacts-bleed/" | relative_url }}) covers the general causes of bleed in more depth, and the kick-bass problem is one of the most common examples.
 
 ## Which tools actually handle drums well
 
@@ -51,7 +51,7 @@ Genre matters enormously here. Electronic music, trap, and anything with program
 
 **Jazz:** The hardest. A jazz kit recorded with minimal close-miking has cymbal wash and room ambience that blends with everything else in the mix. Expect noticeable artifacts.
 
-The [4-stem vs 6-stem post]({{ "/2025/10/08/stem-splitter-artifacts-bleed.html" | relative_url }}) is relevant here too: drum stems are consistently one of the stronger outputs regardless of stem count, since drums are clearly defined as a category across all model architectures.
+The [4-stem vs 6-stem post]({{ "/stem-splitter-artifacts-bleed/" | relative_url }}) is relevant here too: drum stems are consistently one of the stronger outputs regardless of stem count, since drums are clearly defined as a category across all model architectures.
 
 ## What to do when there's bleed
 
@@ -67,9 +67,9 @@ Sometimes, the right answer is to use the drum stem for high-frequency content (
 
 ## Getting the stems into your project
 
-The drum stem comes out at the same sample rate and length as your source file. It should drop into any DAW as a standard audio file without conversion. [Bringing stems into your DAW]({{ "/2026/01/07/using-stems-in-your-daw.html" | relative_url }}) covers the setup for different environments.
+The drum stem comes out at the same sample rate and length as your source file. It should drop into any DAW as a standard audio file without conversion. [Bringing stems into your DAW]({{ "/using-stems-in-your-daw/" | relative_url }}) covers the setup for different environments.
 
-If you're using drum stems for sampling, the [stem splitting for sampling post]({{ "/2026/02/04/stem-splitting-for-sampling-beatmaking.html" | relative_url }}) covers workflow specifics, including how to slice and process extracted drum content.
+If you're using drum stems for sampling, the [stem splitting for sampling post]({{ "/stem-splitting-for-sampling-beatmaking/" | relative_url }}) covers workflow specifics, including how to slice and process extracted drum content.
 
 For transcription and learning purposes, an isolated drum stem is a legitimate tool for working out what a drummer is actually playing. You can solo the stem, slow it down, and map out the pattern in a way that's much harder with the full mix competing for your attention. The [FAQ]({{ "/faq/" | relative_url }}) has more on using stems for educational purposes.
 

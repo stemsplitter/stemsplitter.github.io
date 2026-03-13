@@ -23,7 +23,7 @@ A producer working on a remix might want 6 stems or more: vocals, drums, bass, p
 
 DJs usually don't need that level of detail. In practice, most DJ use cases come down to 2 outputs: the acapella and the instrumental. Sometimes 4: vocals, drums, bass, and everything else. The "other" or "accompaniment" stem is often all you need for a DJ context, because you're blending full tracks, not deconstructing them note by note.
 
-This means you don't need to overthink the stem count when prepping for a gig. A 4-stem split covers almost everything a DJ needs. [4-stem vs 6-stem separation](/2025/10/22/4-stem-vs-6-stem-separation.html) gets into the differences if you want the longer version.
+This means you don't need to overthink the stem count when prepping for a gig. A 4-stem split covers almost everything a DJ needs. [4-stem vs 6-stem separation](/4-stem-vs-6-stem-separation/) gets into the differences if you want the longer version.
 
 ## Pre-split vs real-time separation: be honest about this
 
@@ -35,7 +35,7 @@ The practical approach right now: prepare your stems before the gig. Split the t
 
 This is actually a better workflow anyway. You know exactly what quality you're getting. There are no surprises mid-set.
 
-[Why stem splitters aren't perfect](/2025/10/08/stem-splitter-artifacts-bleed.html) covers the artifacts to listen for when you're evaluating your pre-split stems. Knowing what bleed sounds like helps you make better decisions about which tracks to use.
+[Why stem splitters aren't perfect](/stem-splitter-artifacts-bleed/) covers the artifacts to listen for when you're evaluating your pre-split stems. Knowing what bleed sounds like helps you make better decisions about which tracks to use.
 
 ## What you can do with pre-split stems
 
@@ -47,7 +47,7 @@ Extending breakdowns is another strong application. If you have the drum stem fr
 
 Layering bass elements from one track over the drums of another is more technical but effective when it works. The low-end bleed issue (more on that below) is something to screen for here, since you don't want two competing kick drums if you're using the bass stem from a different track.
 
-[Bringing stems into a DAW](/2026/01/07/using-stems-in-your-daw.md) is relevant if you want to do any pre-processing before loading stems into your DJ software. A bit of light EQ on a stem before the gig can clean up issues that would be annoying to deal with live.
+[Bringing stems into a DAW](/using-stems-in-your-daw/) is relevant if you want to do any pre-processing before loading stems into your DJ software. A bit of light EQ on a stem before the gig can clean up issues that would be annoying to deal with live.
 
 ## Which tools fit a DJ workflow
 
@@ -69,4 +69,4 @@ The honest take: pre-listen to every stem you plan to use before you play it. No
 
 ---
 
-For background on how the AI separation actually works and why these artifacts show up, the [complete guide to stem splitting](/2026/03/13/complete-guide-stem-splitting.html) is a solid starting point. And the [FAQ](/faq/) has answers to some of the common questions around using stems in DJ contexts, including questions about licensing and commercial use. For fast pre-gig stem preparation, [StemSplit.io](https://stemsplit.io) is the quickest option.
+For background on how the AI separation actually works and why these artifacts show up, the [complete guide to stem splitting](/complete-guide-stem-splitting/) is a solid starting point. And the [FAQ](/faq/) has answers to some of the common questions around using stems in DJ contexts, including questions about licensing and commercial use. For fast pre-gig stem preparation, [StemSplit.io](https://stemsplit.io) is the quickest option.

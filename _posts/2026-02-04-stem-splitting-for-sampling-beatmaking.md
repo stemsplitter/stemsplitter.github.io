@@ -21,7 +21,7 @@ The [Meta AI Demucs repository](https://github.com/facebookresearch/demucs) is w
 
 Not every stem is usable for sampling, and knowing what to listen for saves time.
 
-Drum stems from well-produced modern records tend to be clean. The kick and snare are usually well-separated by the model because they're spectrally distinct from vocals and instruments. Drum bleed from other elements is the thing to watch for, a bit of low-end bass note bleeding into the kick pattern, or room reverb from a piano sitting under the snare. [How to extract drum stems](/2025/12/03/how-to-extract-drum-stems.html) covers what to realistically expect from the drum stem specifically.
+Drum stems from well-produced modern records tend to be clean. The kick and snare are usually well-separated by the model because they're spectrally distinct from vocals and instruments. Drum bleed from other elements is the thing to watch for, a bit of low-end bass note bleeding into the kick pattern, or room reverb from a piano sitting under the snare. [How to extract drum stems](/how-to-extract-drum-stems/) covers what to realistically expect from the drum stem specifically.
 
 Basslines are hit or miss. A clean, isolated electric bass against a sparse production will separate well. A bass synth that shares frequency range with a pad or keyboard will blend with it in the model's output. Listen before you commit to building around it.
 
@@ -57,9 +57,9 @@ The first: start from a stem and build out. You've found an element you like, a 
 
 The second: build an original production first, then use stem separation when you need a specific texture you can't create synthetically. You're mostly writing your own material but you want a specific live guitar feel, or a particular kind of snare sound. You find a recording that has what you need, split the stem, extract it, and drop it into your arrangement.
 
-[Bringing stems into your DAW](/2026/01/07/using-stems-in-your-daw.html) covers the technical side of importing and organizing stems once you have them. Getting the file format and alignment right from the start makes the rest of the process smoother.
+[Bringing stems into your DAW](/using-stems-in-your-daw/) covers the technical side of importing and organizing stems once you have them. Getting the file format and alignment right from the start makes the rest of the process smoother.
 
-If you end up with a stem that has quality issues, clicks, or artifacts from the separation process, [AI stem separation for audio restoration](/2026/03/04/stem-separation-audio-restoration.html) has useful techniques for cleaning up problem material before you build around it.
+If you end up with a stem that has quality issues, clicks, or artifacts from the separation process, [AI stem separation for audio restoration](/stem-separation-audio-restoration/) has useful techniques for cleaning up problem material before you build around it.
 
 ## The ethics and legal situation
 
@@ -73,4 +73,4 @@ The [FAQ](/faq/) covers the legal questions in more detail. The short version: p
 
 ---
 
-[StemSplit.io](https://stemsplit.io) is a fast option for getting stems to experiment with. Upload a track, get the separated elements back in a couple of minutes, and start finding out what's usable. The [complete guide to stem splitting](/2026/03/13/complete-guide-stem-splitting.html) is worth reading too if you want a fuller picture of how the separation technology works and what to expect from different kinds of source material.
+[StemSplit.io](https://stemsplit.io) is a fast option for getting stems to experiment with. Upload a track, get the separated elements back in a couple of minutes, and start finding out what's usable. The [complete guide to stem splitting](/complete-guide-stem-splitting/) is worth reading too if you want a fuller picture of how the separation technology works and what to expect from different kinds of source material.

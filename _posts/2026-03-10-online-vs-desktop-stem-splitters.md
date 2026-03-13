@@ -11,7 +11,7 @@ The choice between online and desktop stem splitting isn't really about which on
 
 It's easy to assume the choice is just about convenience, but there's more to it than that. Online tools and desktop software often run different underlying models, with different optimization priorities. An online service might default to a model that handles pop and rock vocals cleanly but struggles with jazz. A desktop tool lets you choose the model yourself and swap it out if the first one doesn't perform well on your source material.
 
-The separation model matters, and [understanding the models](/2025/11/05/demucs-mdxnet-htdemucs-models.html) that underpin these tools gives you a realistic sense of what to expect from either approach. [Meta AI's Demucs repository](https://github.com/facebookresearch/demucs) is where the open-source model development happens, and reviewing what different versions were trained on makes the output quality differences less mysterious.
+The separation model matters, and [understanding the models](/demucs-mdxnet-htdemucs-models/) that underpin these tools gives you a realistic sense of what to expect from either approach. [Meta AI's Demucs repository](https://github.com/facebookresearch/demucs) is where the open-source model development happens, and reviewing what different versions were trained on makes the output quality differences less mysterious.
 
 ## What online tools get right
 
@@ -41,9 +41,9 @@ For producers working under NDAs, handling client material, or developing tracks
 
 In practice, most people who do any serious volume of stem splitting end up using both. Online for quick jobs, one track, testing whether separation is clean enough on a specific song, making a karaoke version on the fly. Desktop for batch work, when quality really matters, or when the source material is something they'd rather not upload.
 
-This isn't a compromise, it's just matching the tool to the task. The [Complete Guide to Stem Splitting](/2026/03/13/complete-guide-stem-splitting.html) goes deeper on the broader landscape if you want context on where everything fits.
+This isn't a compromise, it's just matching the tool to the task. The [Complete Guide to Stem Splitting](/complete-guide-stem-splitting/) goes deeper on the broader landscape if you want context on where everything fits.
 
-The [free vs paid question](/2026/03/07/free-vs-paid-stem-splitters.html) overlaps with this too. UVR5 desktop is free with a learning curve; good online tools have a cleaner experience but usually cost something past a certain usage level.
+The [free vs paid question](/free-vs-paid-stem-splitters/) overlaps with this too. UVR5 desktop is free with a learning curve; good online tools have a cleaner experience but usually cost something past a certain usage level.
 
 ## Which to start with
 
@@ -53,6 +53,6 @@ Start online. The reason is simple: you find out quickly whether stem splitting 
 
 If you hit real limitations, queue times, batch processing needs, upload size restrictions, or privacy requirements, that's when desktop software becomes worth the setup. UVR5 is the desktop tool most serious users end up with. It's not beginner-friendly, but it's the most capable free option available.
 
-The [Stem Splitter FAQ](/faq/) covers a lot of the common questions about both approaches, including what file formats different tools accept and what output quality to expect. And if you're thinking about [how stems fit into a DAW workflow](/2026/01/07/using-stems-in-your-daw.html), that post has practical guidance on what to do with the stems once you have them.
+The [Stem Splitter FAQ](/faq/) covers a lot of the common questions about both approaches, including what file formats different tools accept and what output quality to expect. And if you're thinking about [how stems fit into a DAW workflow](/using-stems-in-your-daw/), that post has practical guidance on what to do with the stems once you have them.
 
 You don't need to choose a side. Use the online tool until it stops doing what you need, then look at desktop. That's the actual path most people take, and it works.

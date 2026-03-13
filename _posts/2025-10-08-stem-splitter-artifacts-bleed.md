@@ -61,7 +61,7 @@ You're not going to eliminate bleed entirely. But you can minimize it and work w
 
 **Choose the right model.** HTDemucs is the current best general-purpose option for most material. But for certain use cases, fine-tuned variants of MDX-Net outperform it on vocals specifically. Running the same track through 2 different models and comparing is a legitimate strategy, it doesn't take long and the difference is sometimes significant. Tools like [UVR5 (Ultimate Vocal Remover)](https://github.com/Anjok07/ultimatevocalremovergui) let you do exactly this with fine-grained model control.
 
-**Use higher stem counts when isolation matters.** Going from 4 stems to 6 stems forces the model to separate guitar and piano from the "other" bucket, which can reduce bleed in all the stems because the model is working with more specific targets. See [4-stem vs 6-stem separation]({{ '/2025/10/22/4-stem-vs-6-stem-separation.html' | relative_url }}) for when this is actually worth doing.
+**Use higher stem counts when isolation matters.** Going from 4 stems to 6 stems forces the model to separate guitar and piano from the "other" bucket, which can reduce bleed in all the stems because the model is working with more specific targets. See [4-stem vs 6-stem separation]({{ '/4-stem-vs-6-stem-separation/' | relative_url }}) for when this is actually worth doing.
 
 **Work with the bleed rather than against it.** For karaoke and practice purposes, a faint hi-hat in the vocal stem doesn't matter. For sampling a bassline, trace amounts of kick bleed into the bass stem might actually help the groove feel right. Bleed only becomes a real problem when you need pristine isolation, which is a narrower set of use cases than it might initially seem.
 
@@ -69,7 +69,7 @@ You're not going to eliminate bleed entirely. But you can minimize it and work w
 
 **Accept that some material just doesn't separate well.** Live recordings of acoustic instruments through a single microphone, music with extreme reverb as a production aesthetic, heavily layered choral arrangements: these are genuinely hard cases where no current tool will give you clean stems. That's not a failure of the technology, it's the current state of what's physically possible.
 
-The [complete guide to stem splitting]({{ '/2026/03/13/complete-guide-stem-splitting.html' | relative_url }}) covers what to expect from different genres more broadly, and [how AI stem separation works]({{ '/2025/09/24/how-ai-stem-separation-works.html' | relative_url }}) explains the frequency overlap problem in more technical detail if you want the full picture.
+The [complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers what to expect from different genres more broadly, and [how AI stem separation works]({{ '/how-ai-stem-separation-works/' | relative_url }}) explains the frequency overlap problem in more technical detail if you want the full picture.
 
 For specific questions about stem separation quality and use cases, the [FAQ]({{ '/faq/' | relative_url }}) covers the most common ones directly.
 

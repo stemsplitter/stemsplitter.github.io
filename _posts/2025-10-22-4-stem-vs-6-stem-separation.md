@@ -15,7 +15,7 @@ Stem count is just how many separate audio outputs the model produces from a sin
 
 That sounds obvious, but the important thing to understand is that more stems doesn't mean the model is more capable overall. It means the model has been trained to identify and separate more specific sources. That added specificity comes with trade-offs, which we'll get to.
 
-The underlying [AI process]({{ "/2025/09/24/how-ai-stem-separation-works.html" | relative_url }}) is the same regardless of stem count. The model is trying to estimate the probability that a given sound belongs to a given source, and it does that for each output it's been trained to produce. More outputs means more competing estimates, which means more room for errors.
+The underlying [AI process]({{ "/how-ai-stem-separation-works/" | relative_url }}) is the same regardless of stem count. The model is trying to estimate the probability that a given sound belongs to a given source, and it does that for each output it's been trained to produce. More outputs means more competing estimates, which means more room for errors.
 
 ## The standard 4-stem breakdown
 
@@ -27,7 +27,7 @@ Vocals and drums are self-explanatory. Bass covers the low-frequency melodic con
 
 For a lot of use cases, that's fine. If you're making a karaoke track, you need the vocal stem. If you're sampling a break, you need the drum stem. The "other" stem might not matter to you at all, and even when it does, a lot of mixed-down arrangements actually blend those non-rhythmic, non-bass elements in a way that sounds coherent as a single file.
 
-The [complete guide to stem splitting]({{ "/2026/03/13/complete-guide-stem-splitting.html" | relative_url }}) covers how these stems get used across different workflows, if you want a broader picture.
+The [complete guide to stem splitting]({{ "/complete-guide-stem-splitting/" | relative_url }}) covers how these stems get used across different workflows, if you want a broader picture.
 
 ## What 6-stem adds
 
@@ -35,7 +35,7 @@ The [complete guide to stem splitting]({{ "/2026/03/13/complete-guide-stem-split
 
 So instead of one "other" stem containing guitar, piano, and synths together, you'd get a guitar stem, a piano stem, and whatever's left.
 
-That's genuinely useful in specific situations. The honest trade-off: more stems means the model has to make harder decisions. The [artifacts and bleed]({{ "/2025/10/08/stem-splitter-artifacts-bleed.html" | relative_url }}) that come with any separation get more pronounced when you're asking the model to distinguish between a piano and a guitar playing in overlapping frequency ranges. A strummed acoustic guitar and a piano chord voiced in the same octave are not obviously different things to an AI model trained on audio alone.
+That's genuinely useful in specific situations. The honest trade-off: more stems means the model has to make harder decisions. The [artifacts and bleed]({{ "/stem-splitter-artifacts-bleed/" | relative_url }}) that come with any separation get more pronounced when you're asking the model to distinguish between a piano and a guitar playing in overlapping frequency ranges. A strummed acoustic guitar and a piano chord voiced in the same octave are not obviously different things to an AI model trained on audio alone.
 
 In practice, the vocal and drum stems from a 6-stem model are often just as clean as from a 4-stem model. But the guitar and piano stems, specifically, tend to have more leakage between them. You'll pull out what's labeled "guitar" and hear some piano, and vice versa.
 
@@ -43,7 +43,7 @@ That's not a flaw in any particular tool, it's a fundamental challenge of the ta
 
 ## When 4-stem is genuinely enough
 
-Most remixing workflows don't need individual instrument stems. If you're building an acapella for a remix, you need the vocal stem from a 4-stem model. If you're pulling drums for a new beat, same story. If you're making a karaoke version, [isolating the vocal]({{ "/2025/11/19/how-to-isolate-vocals-from-a-song.html" | relative_url }}) cleanly matters far more than what happens to the instrumental.
+Most remixing workflows don't need individual instrument stems. If you're building an acapella for a remix, you need the vocal stem from a 4-stem model. If you're pulling drums for a new beat, same story. If you're making a karaoke version, [isolating the vocal]({{ "/how-to-isolate-vocals-from-a-song/" | relative_url }}) cleanly matters far more than what happens to the instrumental.
 
 Sampling falls into this category too. You want the drum break, you want the bass loop, maybe you want the "other" stem to chop something off the top. All of that is 4-stem territory.
 
@@ -53,7 +53,7 @@ Beat production, practice tracks, quick remix sketches — start with 4-stem. It
 
 Two scenarios where the extra stems are worth it:
 
-**Learning a specific instrument.** If you're trying to transcribe a piano part, or learn a guitar riff by ear, having that instrument isolated even with some light bleed is far better than having it buried in the "other" stem with everything else. The isolation doesn't have to be perfect to be useful for learning purposes. [Drum extraction]({{ "/2025/12/03/how-to-extract-drum-stems.html" | relative_url }}) for transcription is a similar case.
+**Learning a specific instrument.** If you're trying to transcribe a piano part, or learn a guitar riff by ear, having that instrument isolated even with some light bleed is far better than having it buried in the "other" stem with everything else. The isolation doesn't have to be perfect to be useful for learning purposes. [Drum extraction]({{ "/how-to-extract-drum-stems/" | relative_url }}) for transcription is a similar case.
 
 **Heavy post-production.** If you're doing restoration work on a track and need to process individual instruments separately, 6-stem gives you more surgical control. A session musician overdubbing on a specific instrument, a producer replacing a piano sample with a live recording, someone re-amping a guitar stem — these are the real 6-stem use cases.
 

@@ -79,8 +79,8 @@ State-of-the-art models like HTDemucs achieve SDR scores in the 8-10 dB range fo
 
 But even these scores reflect a fundamental ceiling: the problem is inherently underdetermined. There's more than one valid answer to "what could the vocals have sounded like before mixing," and the AI picks the statistically most likely answer. On unusual mixes, unusual vocal timbres, or genres poorly represented in the training data, that guess can be noticeably off.
 
-[Bleed and artifacts]({{ '/2025/10/08/stem-splitter-artifacts-bleed.html' | relative_url }}) are the practical result of this. The hi-hat ghosting in the vocal stem, the reverb tail of a snare showing up in the bass stem: these aren't bugs in a simple sense. They're the model's best reconstruction falling short of perfect separation.
+[Bleed and artifacts]({{ '/stem-splitter-artifacts-bleed/' | relative_url }}) are the practical result of this. The hi-hat ghosting in the vocal stem, the reverb tail of a snare showing up in the bass stem: these aren't bugs in a simple sense. They're the model's best reconstruction falling short of perfect separation.
 
-The different models available ([Demucs, MDX-Net, HTDemucs and others]({{ '/2025/11/05/demucs-mdxnet-htdemucs-models.html' | relative_url }})) have different strengths depending on the genre and the specific stem you're trying to extract. Choosing the right model for your material makes a measurable difference in output quality.
+The different models available ([Demucs, MDX-Net, HTDemucs and others]({{ '/demucs-mdxnet-htdemucs-models/' | relative_url }})) have different strengths depending on the genre and the specific stem you're trying to extract. Choosing the right model for your material makes a measurable difference in output quality.
 
-And if you want to just get started without going deep on model selection, the [complete guide to stem splitting]({{ '/2026/03/13/complete-guide-stem-splitting.html' | relative_url }}) covers which tools to use and when.
+And if you want to just get started without going deep on model selection, the [complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers which tools to use and when.

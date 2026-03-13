@@ -17,17 +17,17 @@ A well-encoded WAV or FLAC from a commercial release will give you noticeably be
 
 If you have access to the track at higher quality, use it. Streaming services don't let you download lossless audio, but if you own the track or can source a FLAC through a legitimate purchase, that's worth doing when quality is important. A 320kbps MP3 is generally fine. Anything below 192kbps, you'll probably notice it in the output.
 
-The [how AI stem separation works]({{ "/2025/09/24/how-ai-stem-separation-works.html" | relative_url }}) post explains why audio quality upstream affects downstream results at a model level.
+The [how AI stem separation works]({{ "/how-ai-stem-separation-works/" | relative_url }}) post explains why audio quality upstream affects downstream results at a model level.
 
 ## Choosing the right approach for vocal isolation
 
-Not all separation models treat vocals equally. As covered in the [models post]({{ "/2025/11/05/demucs-mdxnet-htdemucs-models.html" | relative_url }}), the dominant architectures are HTDemucs and MDX-Net, plus VR Architecture models that have been specifically fine-tuned for vocal isolation.
+Not all separation models treat vocals equally. As covered in the [models post]({{ "/demucs-mdxnet-htdemucs-models/" | relative_url }}), the dominant architectures are HTDemucs and MDX-Net, plus VR Architecture models that have been specifically fine-tuned for vocal isolation.
 
 For most commercial pop, hip-hop, R&B, or electronic tracks, HTDemucs produces very clean vocal stems. The model has been trained extensively on mixed-source music and handles lead vocals well across most production styles.
 
 VR Architecture models, particularly fine-tuned versions available in tools like [UVR5](https://github.com/Anjok07/ultimatevocalremovergui), can outperform HTDemucs specifically on vocal separation. If you're doing this regularly and quality is critical, it's worth testing a VR model on your material. The trade-off is that VR models sometimes produce a slightly thinner or more processed-sounding vocal, depending on the fine-tune.
 
-[4-stem vs 6-stem separation]({{ "/2026/01/21/stem-splitting-for-djs.html" | relative_url }}) doesn't matter much for vocal isolation specifically. You want the vocal stem, and that stem is consistently represented across both. Go with 4-stem unless you have a reason to do otherwise. The [4-stem vs 6-stem post]({{ "/2025/10/22/4-stem-vs-6-stem-separation.html" | relative_url }}) goes into why.
+[4-stem vs 6-stem separation]({{ "/stem-splitting-for-djs/" | relative_url }}) doesn't matter much for vocal isolation specifically. You want the vocal stem, and that stem is consistently represented across both. Go with 4-stem unless you have a reason to do otherwise. The [4-stem vs 6-stem post]({{ "/4-stem-vs-6-stem-separation/" | relative_url }}) goes into why.
 
 ## The actual process
 
@@ -43,13 +43,13 @@ If you're using a desktop tool like UVR5, you have more control over model selec
 
 ## What to do with the result
 
-Once you have your vocal stem, you'll want to import it into your DAW or editing environment. The stem comes out at the same sample rate and length as your source file, so it should drop in cleanly. [Bringing stems into your DAW]({{ "/2026/01/07/using-stems-in-your-daw.html" | relative_url }}) covers the practical workflow for different setups.
+Once you have your vocal stem, you'll want to import it into your DAW or editing environment. The stem comes out at the same sample rate and length as your source file, so it should drop in cleanly. [Bringing stems into your DAW]({{ "/using-stems-in-your-daw/" | relative_url }}) covers the practical workflow for different setups.
 
 Light bleed is common. On most tracks you'll hear a faint ghost of the instrumental in the background of the vocal stem. For most purposes — remixing, karaoke, pitch analysis — this isn't a problem. It gets masked when you put the vocal against new instrumentation.
 
 If the bleed bothers you, a high-pass filter on the vocal stem can help with low-frequency bleed from bass instruments. A noise gate with a gentle threshold can reduce the audibility of the bleed between phrases. Neither of these is a complete fix, but they can get the stem to a point where it's not distracting in context.
 
-For more on managing artifacts, the [stem splitter artifacts post]({{ "/2025/10/08/stem-splitter-artifacts-bleed.html" | relative_url }}) covers the causes and practical workarounds in detail.
+For more on managing artifacts, the [stem splitter artifacts post]({{ "/stem-splitter-artifacts-bleed/" | relative_url }}) covers the causes and practical workarounds in detail.
 
 ## When it's going to disappoint you
 

@@ -25,7 +25,7 @@ Not every service imposes all of these. Some are more generous with free access 
 
 For a lot of use cases, free is completely fine.
 
-You want to [isolate the vocal from one song](/2025/11/19/how-to-isolate-vocals-from-a-song.html) to practice singing over it? Free. You're [making a karaoke track](/2025/12/17/how-to-make-karaoke-track.html) for a single event? Free. You're a student [learning a song by ear](/2026/02/18/stem-splitting-learn-songs-by-ear.html) and want to isolate the guitar part to transcribe it? Free.
+You want to [isolate the vocal from one song](/how-to-isolate-vocals-from-a-song/) to practice singing over it? Free. You're [making a karaoke track](/how-to-make-karaoke-track/) for a single event? Free. You're a student [learning a song by ear](/stem-splitting-learn-songs-by-ear/) and want to isolate the guitar part to transcribe it? Free.
 
 The output quality from free tiers on mainstream songs is usually pretty clean. Models trained on pop and rock music handle those genres well, and the free tier often uses the same model as paid, just with processing constraints layered on top. Testing before you commit to a subscription is also genuinely useful; run a track through free, hear what the stems sound like, and decide if the quality is good enough for what you need.
 
@@ -55,6 +55,6 @@ The free access lets you test it before committing, which is exactly the right w
 
 If you're doing high-volume batch work and you're comfortable with desktop software, UVR5 plus your own processing setup is worth the investment. It's the more powerful option in absolute terms. But for most musicians, producers, and educators, the tradeoffs involved in running desktop software aren't worth it, and a good online tool does the job well.
 
-The [Complete Guide to Stem Splitting](/2026/03/13/complete-guide-stem-splitting.html) covers the full landscape if you want broader context. If you're deciding between online and desktop approaches, there's also a dedicated breakdown in [Online vs Desktop Stem Splitters](/2026/03/10/online-vs-desktop-stem-splitters.html). And the [Stem Splitter FAQ](/faq/) addresses a lot of the common questions about both free and paid options.
+The [Complete Guide to Stem Splitting](/complete-guide-stem-splitting/) covers the full landscape if you want broader context. If you're deciding between online and desktop approaches, there's also a dedicated breakdown in [Online vs Desktop Stem Splitters](/online-vs-desktop-stem-splitters/). And the [Stem Splitter FAQ](/faq/) addresses a lot of the common questions about both free and paid options.
 
 Pay when the free tier is actually limiting your work. Don't pay to feel like you have a professional tool. Those are different reasons, and only one of them is worth money.

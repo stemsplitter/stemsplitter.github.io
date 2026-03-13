@@ -23,7 +23,7 @@ Guitarists usually benefit most from a stem without the bass. The low-end muddin
 
 Drummers learning a complex fill want the drum stem in isolation. Full stop. Listening to drums in a dense mix means your brain is constantly filtering. Pull the drum stem and you hear every ghost note, every hi-hat variation, every subtle shift in the kick pattern. If you're studying a particular drummer's style, the isolated stem is like getting a transcript.
 
-Pianists and keyboardists probably get the most out of 6-stem separation when it's available. The standard 4-stem split combines all instruments into "other," which can lump together piano, organ, strings, and synths. A 6-stem model that isolates piano specifically is genuinely useful for transcription. (More on stem model types in [The Complete Guide to Stem Splitting](/2026/03/13/complete-guide-stem-splitting.html).)
+Pianists and keyboardists probably get the most out of 6-stem separation when it's available. The standard 4-stem split combines all instruments into "other," which can lump together piano, organ, strings, and synths. A 6-stem model that isolates piano specifically is genuinely useful for transcription. (More on stem model types in [The Complete Guide to Stem Splitting](/complete-guide-stem-splitting/).)
 
 Vocalists have their own specific use case covered below.
 
@@ -50,11 +50,11 @@ The same applies to rhythm. Pulling out just the drums and just the bass from a 
 
 Here's the use case that doesn't get talked about enough: using the instrumental stem for vocal practice.
 
-If you [isolate the vocals from a song](/2025/11/19/how-to-isolate-vocals-from-a-song.html), the byproduct is always an instrumental version with the vocals removed. That instrumental is surprisingly useful for singers. You can practice your part while hearing the full arrangement, without the original singer in your ear competing with you. It's more useful than a karaoke track in some ways, because it's the actual recording, just without the vocal.
+If you [isolate the vocals from a song](/how-to-isolate-vocals-from-a-song/), the byproduct is always an instrumental version with the vocals removed. That instrumental is surprisingly useful for singers. You can practice your part while hearing the full arrangement, without the original singer in your ear competing with you. It's more useful than a karaoke track in some ways, because it's the actual recording, just without the vocal.
 
-This works well for audition prep, for singers learning harmonies, and for vocal coaches running lessons. Load the instrumental into any audio player, sing along, and you get direct feedback on your intonation against real instrumentation. Combined with a simple recording setup so you can hear yourself back, it's a legitimate practice tool. You can also check out [how to make a karaoke track](/2025/12/17/how-to-make-karaoke-track.html) for a slightly more polished version of this process.
+This works well for audition prep, for singers learning harmonies, and for vocal coaches running lessons. Load the instrumental into any audio player, sing along, and you get direct feedback on your intonation against real instrumentation. Combined with a simple recording setup so you can hear yourself back, it's a legitimate practice tool. You can also check out [how to make a karaoke track](/how-to-make-karaoke-track/) for a slightly more polished version of this process.
 
-For drummers specifically, there's also a dedicated post on [extracting drum stems](/2025/12/03/how-to-extract-drum-stems.html) if you want to go deeper on that particular use case.
+For drummers specifically, there's also a dedicated post on [extracting drum stems](/how-to-extract-drum-stems/) if you want to go deeper on that particular use case.
 
 Stem splitting for music practice isn't a replacement for traditional ear training. You still need to do the work of internalizing what you're hearing, identifying intervals, building musical memory. But it removes the biggest obstacle: not being able to clearly hear what you're trying to learn. The [Stem Splitter FAQ](/faq/) has more on what formats and models are available if you're just getting started.
 
