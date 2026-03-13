@@ -1,0 +1,282 @@
+---
+layout: default
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "{{ site.url }}/glossary/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "Stem Splitter Glossary",
+  "description": "{{ page.description }}",
+  "url": "{{ site.url }}/glossary/",
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "name": "A cappella",
+      "description": "An a cappella recording consists of vocals only, with no instrumental accompaniment. In stem splitting, an a cappella is produced by extracting just the vocal stem from a mixed track.",
+      "url": "{{ site.url }}/glossary/#a-cappella",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "AI music splitter",
+      "description": "An AI music splitter is another term for a stem splitter: software that uses artificial intelligence to separate a mixed audio recording into its individual component parts.",
+      "url": "{{ site.url }}/glossary/#ai-music-splitter",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Artifacts",
+      "description": "Unwanted sounds introduced by the separation process, including metallic distortion, clicks, ghost notes, or clipped reverb tails.",
+      "url": "{{ site.url }}/glossary/#artifacts",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Bass stem",
+      "description": "The isolated low-frequency bass content extracted from a mix, typically targeting bass guitar or synthesizer bass.",
+      "url": "{{ site.url }}/glossary/#bass-stem",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Bit depth",
+      "description": "The number of bits used to represent each audio sample. 16-bit is CD standard; 24-bit is the working standard in professional audio.",
+      "url": "{{ site.url }}/glossary/#bit-depth",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Bleed",
+      "description": "Bleed refers to parts of one instrument appearing in a stem intended for a different instrument, such as vocal bleed in the instrumental stem.",
+      "url": "{{ site.url }}/glossary/#bleed",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BPM",
+      "description": "Beats Per Minute, a measure of musical tempo. Stem splitters don't require BPM information to operate, but DAWs use it for tempo-syncing stems.",
+      "url": "{{ site.url }}/glossary/#bpm",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "DAW",
+      "description": "Digital Audio Workstation. The software environment where most audio production work happens, including importing and working with stems.",
+      "url": "{{ site.url }}/glossary/#daw",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Demucs",
+      "description": "An open-source music source separation model developed by Meta AI Research, with HTDemucs being the current state of the art.",
+      "url": "{{ site.url }}/glossary/#demucs",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Drum stem",
+      "description": "The isolated drum and percussion content extracted from a mix, including kick, snare, hi-hats, cymbals, and auxiliary percussion.",
+      "url": "{{ site.url }}/glossary/#drum-stem",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "FLAC",
+      "description": "Free Lossless Audio Codec. An audio format that compresses files without discarding any audio data, unlike MP3.",
+      "url": "{{ site.url }}/glossary/#flac",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "HTDemucs",
+      "description": "The current primary model in the Demucs family from Meta AI Research, using a hybrid architecture combining convolutional layers and transformers.",
+      "url": "{{ site.url }}/glossary/#htdemucs",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Instrumental",
+      "description": "An instrumental track is a version of a song with the lead vocals removed, leaving only the musical arrangement. Creating an instrumental is one of the most common reasons people use stem splitters.",
+      "url": "{{ site.url }}/glossary/#instrumental",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Karaoke track",
+      "description": "An instrumental version of a song with the lead vocals removed, used for singing practice or performance.",
+      "url": "{{ site.url }}/glossary/#karaoke-track",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Mashup",
+      "description": "A music production technique where elements from two or more songs are combined into a new recording. Stem splitters enable mashups by isolating vocals or instrumentals from existing tracks.",
+      "url": "{{ site.url }}/glossary/#mashup",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "MDX-Net",
+      "description": "A neural network architecture developed for music demixing competitions, known for strong vocal and instrument separation performance.",
+      "url": "{{ site.url }}/glossary/#mdx-net",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Model ensemble",
+      "description": "The technique of running two or more separate AI models on the same audio input and combining their outputs to produce cleaner stems than any single model alone.",
+      "url": "{{ site.url }}/glossary/#model-ensemble",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "MUSDB18",
+      "description": "A standardized dataset of 150 tracks with professionally recorded stems used for benchmarking music source separation systems.",
+      "url": "{{ site.url }}/glossary/#musdb18",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Music source separation",
+      "description": "The technical field focused on isolating individual audio sources from a mixed recording. Stem splitting is a practical application of this research.",
+      "url": "{{ site.url }}/glossary/#music-source-separation",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Multitrack recording",
+      "description": "An audio recording where each instrument is captured on its own separate track rather than mixed together. Professional recordings are made this way; stem splitters reconstruct approximate versions of these original tracks from the finished mix.",
+      "url": "{{ site.url }}/glossary/#multitrack-recording",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Online stem splitter",
+      "description": "A browser-based tool that performs AI source separation without requiring any software installation. You upload a file and download the resulting stems.",
+      "url": "{{ site.url }}/glossary/#online-stem-splitter",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Other stem",
+      "description": "In a 4-stem model, the other stem captures everything that isn't vocals, drums, or bass, typically guitars, keyboards, synths, and strings.",
+      "url": "{{ site.url }}/glossary/#other-stem",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Remix",
+      "description": "A new version of a song created by altering its arrangement, tempo, key, or instrumentation. Stem splitters make unofficial remixing possible by providing isolated components of a song.",
+      "url": "{{ site.url }}/glossary/#remix",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Sample rate",
+      "description": "The number of audio samples captured per second, measured in Hz or kHz. 44.1 kHz is CD standard; 48 kHz is common in video production.",
+      "url": "{{ site.url }}/glossary/#sample-rate",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Sampling",
+      "description": "The practice of using a portion of one recording as an element in a new composition. Stem splitters isolate the specific part of a track to be sampled without bleed from other instruments.",
+      "url": "{{ site.url }}/glossary/#sampling",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Spectrogram",
+      "description": "A visual representation of audio frequency content over time, used by many source separation models as an intermediate representation for processing.",
+      "url": "{{ site.url }}/glossary/#spectrogram",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Spleeter",
+      "description": "An open-source source separation library released by Deezer Research in 2019, one of the first widely accessible neural stem splitters.",
+      "url": "{{ site.url }}/glossary/#spleeter",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Stem",
+      "description": "A single isolated audio component extracted from a mixed recording. Common stems include vocals, drums, bass, and other instruments.",
+      "url": "{{ site.url }}/glossary/#stem",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Stem splitter",
+      "description": "A tool that uses AI to separate a mixed audio recording into individual component stems such as vocals, drums, bass, and instruments.",
+      "url": "{{ site.url }}/glossary/#stem-splitter",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "STFT",
+      "description": "Short-Time Fourier Transform. A mathematical technique that converts an audio signal into its frequency components across short, overlapping time windows.",
+      "url": "{{ site.url }}/glossary/#stft",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "VR Architecture",
+      "description": "Vocal Remover Architecture. A class of neural network designs optimized for separating vocal content from instrumentals, used in UVR5 tools.",
+      "url": "{{ site.url }}/glossary/#vr-architecture",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Vocal isolation",
+      "description": "The process of extracting the vocal stem from a mixed recording, leaving behind a clean instrumental version.",
+      "url": "{{ site.url }}/glossary/#vocal-isolation",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Vocal remover",
+      "description": "Software focused specifically on the vocal/instrumental split rather than full multi-stem separation, producing a vocals stem and an accompaniment stem.",
+      "url": "{{ site.url }}/glossary/#vocal-remover",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Vocal stem",
+      "description": "The isolated audio file containing only the lead vocal from a mixed recording, one of the four standard outputs of a 4-stem separation.",
+      "url": "{{ site.url }}/glossary/#vocal-stem",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "WAV",
+      "description": "Waveform Audio File Format. An uncompressed audio format that stores raw audio data without any quality loss, the standard for professional audio work.",
+      "url": "{{ site.url }}/glossary/#wav",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    }
+  ]
+}
+</script>
+
+<div class="page-wrapper">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+    <div class="glossary-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

@@ -876,3 +876,87 @@ hr {
     padding: 1.75rem 1.25rem;
   }
 }
+
+/* =========================================
+   GLOSSARY PAGE
+   ========================================= */
+.glossary-content {
+  padding: 2rem 0 4rem;
+  max-width: var(--max-width);
+}
+
+.glossary-alpha-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.1rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.glossary-alpha-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  transition: color var(--ease), background var(--ease);
+}
+
+.glossary-alpha-nav a:hover {
+  color: var(--heading);
+  background: var(--accent-dim);
+}
+
+.glossary-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.glossary-content h3:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.glossary-content p {
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+}
+
+.glossary-content a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+.glossary-content a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+.glossary-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .glossary-alpha-nav {
+    font-size: 0.8rem;
+  }
+  .glossary-content h3 {
+    font-size: 0.98rem;
+  }
+}
