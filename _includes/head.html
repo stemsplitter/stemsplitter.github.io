@@ -7,6 +7,12 @@
 
   {% seo %}
 
+  <!-- Allow full content indexing by AI and search crawlers -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- LLMs.txt discovery -->
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="{{ '/llms.txt' | absolute_url }}">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

@@ -1,0 +1,29 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# {{ site.title }}
+
+> {{ site.description }}
+
+This blog covers AI-powered audio stem separation technology, including tool reviews, model comparisons, tutorials, and practical use cases. All content is independently written and focused on helping audio engineers and musicians understand and use AI stem separation software.
+
+## Topics Covered
+
+- AI stem separation models and tools (Demucs, Spleeter, MDX-Net, etc.)
+- Comparison of stem separation quality across different AI approaches
+- Practical tutorials for isolating vocals, drums, bass, and instruments
+- The underlying machine learning techniques powering stem separation
+- Real-world use cases in music production, remixing, and audio restoration
+
+## Blog Posts
+
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
+{% endfor %}
+
+## Navigation
+
+- [Home]({{ site.url }}/)
+- [Archive]({{ site.url }}/archive)
+- [RSS Feed]({{ site.url }}/feed.xml)
+- [Sitemap]({{ site.url }}/sitemap.xml)
