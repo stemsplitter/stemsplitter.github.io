@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section class="home-hero">
+  <div class="container">
+    <div class="hero-tag">AI Audio Technology</div>
+    <h1 class="hero-title">Stem Separation</h1>
+    <p class="hero-desc">{{ site.description }}</p>
+  </div>
+</section>
+
+<section class="posts-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+    </div>
+    <div class="post-list">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        </div>
+        <h3 class="post-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        {% if post.excerpt %}
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        {% endif %}
+        <a href="{{ post.url | relative_url }}" class="read-more">Read article →</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if content and content != "" %}
+<div class="container home-extra">
+  {{ content }}
+</div>
+{% endif %}
