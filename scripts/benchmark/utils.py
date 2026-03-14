@@ -123,10 +123,13 @@ def compute_sdr(reference, estimate):
             return None
 
         import mir_eval
-        sdr_vals, _, _, _ = mir_eval.separation.bss_eval_sources(
-            ref[np.newaxis, :],
-            est[np.newaxis, :],
-        )
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            sdr_vals, _, _, _ = mir_eval.separation.bss_eval_sources(
+                ref[np.newaxis, :],
+                est[np.newaxis, :],
+            )
         val = float(sdr_vals[0])
         return val if np.isfinite(val) and val > -100 else None
 

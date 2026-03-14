@@ -1,8 +1,12 @@
 ---
 layout: research-post
 title: "HTDemucs Model Variant Comparison: Quality vs Speed"
-description: "SDR and processing time comparison across htdemucs, htdemucs_ft, htdemucs_6s, and htdemucs_mmi on MUSDB18-7s."
+description: "SDR and processing time comparison across htdemucs, htdemucs_ft, htdemucs_6s, and hdemucs_mmi on MUSDB18-7s."
 data_key: model_comparison
+yaml_file: model_comparison.yml
+cite_key: michaels2026models
+measurement_technique: "BSSEval v4 SDR via mir_eval Python package; wall-clock processing time on Apple M4 MPS. All four HTDemucs variants evaluated on 50 MUSDB18-7s test tracks."
+variable_measured: "Signal-to-Distortion Ratio (SDR) in dB per stem; processing time in seconds per 7-second clip"
 permalink: /research/model-comparison/
 ---
 

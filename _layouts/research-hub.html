@@ -24,10 +24,12 @@ layout: default
   "description": "{{ page.description | escape }}",
   "url": "{{ site.url }}/research/",
   "dateModified": "{% if meta %}{{ meta.run_timestamp }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
   "author": {
     "@type": "Person",
     "@id": "{{ site.url }}/about/",
-    "name": "{{ site.author }}"
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}/about/"
   },
   "publisher": {
     "@type": "Organization",
@@ -37,14 +39,80 @@ layout: default
   "about": [
     {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#htdemucs", "name": "HTDemucs", "inDefinedTermSet": "{{ site.url }}/glossary/"},
     {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#music-source-separation", "name": "Music source separation", "inDefinedTermSet": "{{ site.url }}/glossary/", "sameAs": "http://dbpedia.org/resource/Audio_source_separation"},
-    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#stem-splitter", "name": "Stem splitter", "inDefinedTermSet": "{{ site.url }}/glossary/"}
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#stem-splitter", "name": "Stem splitter", "inDefinedTermSet": "{{ site.url }}/glossary/"},
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#musdb18", "name": "MUSDB18", "inDefinedTermSet": "{{ site.url }}/glossary/"}
   ],
-  "citation": {
-    "@type": "Dataset",
-    "name": "MUSDB18",
-    "description": "A dataset of 150 full-length music tracks with isolated stems, used as the standard benchmark for music source separation research.",
-    "url": "https://zenodo.org/record/1117372",
-    "sameAs": "https://zenodo.org/record/1117372"
+  "isBasedOn": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Hybrid Transformers for Music Source Separation",
+      "author": "Alexandre Defossez",
+      "url": "https://arxiv.org/abs/2211.02302",
+      "sameAs": "https://arxiv.org/abs/2211.02302"
+    },
+    {
+      "@type": "Dataset",
+      "name": "MUSDB18-HQ",
+      "description": "150 full-length music tracks with isolated stems, the standard benchmark for music source separation research.",
+      "url": "https://zenodo.org/record/3338373",
+      "sameAs": "https://zenodo.org/record/3338373"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/reconstruction-fidelity/",
+      "headline": "How Much Information Does Stem Separation Actually Lose?",
+      "url": "{{ site.url }}/research/reconstruction-fidelity/"{% if site.data.research.reconstruction %},
+      "abstract": "{{ site.data.research.reconstruction.key_finding | escape }}"{% endif %}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/format-quality/",
+      "headline": "Does Audio Format Affect Stem Separation Quality?",
+      "url": "{{ site.url }}/research/format-quality/"{% if site.data.research.format_quality %},
+      "abstract": "{{ site.data.research.format_quality.key_finding | escape }}"{% endif %}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/model-comparison/",
+      "headline": "HTDemucs Model Variant Comparison: Quality vs Speed",
+      "url": "{{ site.url }}/research/model-comparison/"{% if site.data.research.model_comparison %},
+      "abstract": "{{ site.data.research.model_comparison.key_finding | escape }}"{% endif %}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/genre-performance/",
+      "headline": "HTDemucs Performance by Track Characteristics",
+      "url": "{{ site.url }}/research/genre-performance/"{% if site.data.research.genre_performance %},
+      "abstract": "{{ site.data.research.genre_performance.key_finding | escape }}"{% endif %}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/complexity-prediction/",
+      "headline": "What Makes a Track Hard to Separate?",
+      "url": "{{ site.url }}/research/complexity-prediction/"{% if site.data.research.complexity %},
+      "abstract": "{{ site.data.research.complexity.key_finding | escape }}"{% endif %}
+    }
+  ],
+  "citation": [
+    {
+      "@type": "Dataset",
+      "name": "MUSDB18",
+      "description": "A dataset of 150 full-length music tracks with isolated stems, the standard benchmark for music source separation research.",
+      "url": "https://zenodo.org/record/1117372",
+      "sameAs": "https://zenodo.org/record/1117372"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "demucs",
+      "url": "https://github.com/facebookresearch/demucs",
+      "applicationCategory": "Audio source separation"
+    }
+  ],
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".page-title", ".research-hub-intro"]
   }
 }
 </script>

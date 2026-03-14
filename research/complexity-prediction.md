@@ -3,6 +3,10 @@ layout: research-post
 title: "What Makes a Track Hard to Separate?"
 description: "Audio feature correlation analysis showing which track properties predict higher or lower HTDemucs SDR on MUSDB18-7s."
 data_key: complexity
+yaml_file: complexity.yml
+cite_key: michaels2026complexity
+measurement_technique: "Pearson r between librosa audio features (RMS, spectral centroid, flatness, ZCR, HPSS, onset density, chroma variance, vocal band energy) and BSSEval v4 SDR from htdemucs_ft."
+variable_measured: "Pearson correlation coefficient (r) between audio complexity features and SDR per stem"
 permalink: /research/complexity-prediction/
 ---
 

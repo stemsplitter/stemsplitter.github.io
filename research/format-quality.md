@@ -3,6 +3,10 @@ layout: research-post
 title: "Does Audio Format Affect Stem Separation Quality?"
 description: "Benchmark measuring how WAV, MP3, and AAC input quality affects HTDemucs SDR scores on the MUSDB18-7s dataset."
 data_key: format_quality
+yaml_file: format_quality.yml
+cite_key: michaels2026format
+measurement_technique: "BSSEval v4 SDR via mir_eval Python package. Each mixture re-encoded to target format via ffmpeg, decoded back to WAV, then separated with htdemucs_ft on MUSDB18-7s."
+variable_measured: "Signal-to-Distortion Ratio (SDR) in dB per stem (vocals, drums, bass, other)"
 permalink: /research/format-quality/
 ---
 

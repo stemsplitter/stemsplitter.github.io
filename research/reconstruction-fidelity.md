@@ -3,6 +3,10 @@ layout: research-post
 title: "How Much Information Does Stem Separation Actually Lose?"
 description: "Measuring reconstruction fidelity when stems separated by HTDemucs are summed back to a mix. Tests 2-stem, 4-stem, and 6-stem modes."
 data_key: reconstruction
+yaml_file: reconstruction.yml
+cite_key: michaels2026reconstruction
+measurement_technique: "Mean squared error, Pearson correlation, and dB difference between original MUSDB18-7s mixture and the sum of all separated stems."
+variable_measured: "Reconstruction fidelity: mean squared error (MSE), Pearson r, and dB difference signal level relative to original"
 permalink: /research/reconstruction-fidelity/
 ---
 

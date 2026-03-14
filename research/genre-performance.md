@@ -3,6 +3,10 @@ layout: research-post
 title: "HTDemucs Performance by Track Characteristics"
 description: "How HTDemucs separation quality varies across genre and track type using MUSDB18-7s data."
 data_key: genre_performance
+yaml_file: genre_performance.yml
+cite_key: michaels2026genre
+measurement_technique: "BSSEval v4 SDR from htdemucs_ft runs (Test 2), grouped by vocals SDR tertile and MUSDB18-7s genre metadata where available."
+variable_measured: "Median Signal-to-Distortion Ratio (SDR) in dB per stem, grouped by track quality tier and genre"
 permalink: /research/genre-performance/
 ---
 

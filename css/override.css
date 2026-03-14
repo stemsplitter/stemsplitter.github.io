@@ -1780,6 +1780,74 @@ hr {
   font-weight: 600;
 }
 
+/* Research footer: citation + raw data */
+.research-footer-blocks {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 680px;
+}
+
+.research-raw-data {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.6rem;
+  align-items: center;
+}
+
+.research-raw-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+
+.research-raw-data a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.78rem;
+}
+
+.research-raw-data a:hover {
+  text-decoration: underline;
+}
+
+.research-cite-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.research-cite-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.research-bibtex {
+  background: var(--bg-code, #0d1117);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  white-space: pre;
+  overflow-x: auto;
+  margin: 0;
+}
+
 @media (max-width: 640px) {
   .research-card-grid {
     grid-template-columns: 1fr;
@@ -1787,5 +1855,8 @@ hr {
   .research-meta-bar {
     flex-direction: column;
     gap: 0.35rem;
+  }
+  .research-bibtex {
+    font-size: 0.68rem;
   }
 }
