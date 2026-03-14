@@ -4,6 +4,8 @@ title: "AI Stem Separation for Audio Restoration: An Honest Look at What Works"
 date: 2026-03-04
 description: "Stem separation can help with audio restoration in specific situations. Here's when it actually works and when you need proper restoration tools instead."
 tags: Tutorial
+about_terms: [music-source-separation, stem-splitter, bleed]
+mentions_terms: [artifacts, spectrogram, demucs, htdemucs]
 ---
 
 Stem separation and audio restoration are two different things. They occasionally overlap in useful ways, but treating one as a substitute for the other will cost you time and probably make the audio worse. Here's an accurate picture of where the Venn diagram actually overlaps.

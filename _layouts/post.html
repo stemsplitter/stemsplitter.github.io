@@ -53,7 +53,9 @@ layout: default
     "@type": "Blog",
     "name": "{{ site.title }}",
     "url": "{{ site.url }}"
-  },
+  }{% if page.about_terms %},
+  "about": [{% for term in page.about_terms %}{% unless forloop.first %},{% endunless %}{"@type":"DefinedTerm","@id":"{{ site.url }}/glossary/#{{ term }}","name":"{{ site.data.glossary_terms[term] }}","inDefinedTermSet":"{{ site.url }}/glossary/"}{% endfor %}]{% endif %}{% if page.mentions_terms %},
+  "mentions": [{% for term in page.mentions_terms %}{% unless forloop.first %},{% endunless %}{"@type":"DefinedTerm","@id":"{{ site.url }}/glossary/#{{ term }}","name":"{{ site.data.glossary_terms[term] }}","inDefinedTermSet":"{{ site.url }}/glossary/"}{% endfor %}]{% endif %},
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": [".post-title", ".post-content"]

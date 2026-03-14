@@ -4,6 +4,8 @@ title: "How to Extract Drum Stems From a Mixed Track (And What to Watch Out For)
 date: 2025-12-03
 description: "Drum stem extraction is one of the most useful things you can do with a stem splitter. Here's how to get clean results and avoid common problems."
 tags: Tutorial
+about_terms: [drum-stem, stem-splitter]
+mentions_terms: [bleed, htdemucs, daw, bpm, wav]
 ---
 
 Drums are, in some ways, the easiest thing to separate from a mix. They're rhythmically distinct, they hit hard, they often occupy frequency space that other instruments don't touch. A good AI model can identify drumkit transients fairly reliably even in a dense arrangement.

@@ -4,6 +4,8 @@ title: "Stem Splitting for DJs: Getting More Out of Your Sets With Isolated Trac
 date: 2026-01-21
 description: "Stem splitting gives DJs access to individual elements of any track. Here's how it fits into a DJ workflow and what's realistic right now."
 tags: Tutorial
+about_terms: [stem-splitter, remix, mashup, vocal-stem]
+mentions_terms: [daw, a-cappella, online-stem-splitter]
 ---
 
 The appeal is obvious. If you can isolate the acapella from any track, you can mix it over a completely different instrumental. If you can pull out just the drums, you can extend a breakdown indefinitely. Stem splitting opened up possibilities for DJs that used to require either official instrumental versions (rare) or original session files (basically never available).

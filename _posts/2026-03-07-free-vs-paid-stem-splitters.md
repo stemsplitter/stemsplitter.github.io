@@ -4,6 +4,8 @@ title: "Free vs Paid Stem Splitters: When It Actually Makes Sense to Pay"
 date: 2026-03-07
 description: "Free stem splitters are good enough for many use cases. Here's an honest breakdown of what you give up with free tools and when paying is worth it."
 tags: Comparison
+about_terms: [stem-splitter, online-stem-splitter, model-ensemble]
+mentions_terms: [demucs, vr-architecture, bleed, artifacts]
 ---
 
 Free stem splitters are actually pretty good now. That's not a caveat buried at the bottom of a sales pitch; it's just true. If you're a musician who wants to isolate a vocal once in a while, or you're learning songs by ear, or you want a karaoke version of a track for a party, the free options will almost certainly do the job.

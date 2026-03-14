@@ -4,6 +4,8 @@ title: "What Are Audio Stems? What Producers Mean When They Say Stems"
 date: 2025-09-10
 description: "Audio stems are individual instrument tracks separated from a finished mix. Here's what they are, where the term comes from, and why producers care."
 tags: Guide
+about_terms: [stem, stem-splitter, multitrack-recording]
+mentions_terms: [bleed, vocal-stem, drum-stem, bass-stem, other-stem]
 ---
 
 You've heard producers and engineers throw around the word "stems" but maybe you've never been entirely sure what it means, or whether it means the same thing to everyone using it. It doesn't always. The term gets used loosely, and that causes confusion.

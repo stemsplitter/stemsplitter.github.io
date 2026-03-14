@@ -4,6 +4,8 @@ title: "How AI Stem Separation Actually Works (Without the Jargon)"
 date: 2025-09-24
 description: "AI stem separation uses neural networks trained on multi-track recordings to pull apart a stereo mix. Here's how it actually works."
 tags: Guide
+about_terms: [music-source-separation, stem-splitter, htdemucs, spectrogram]
+mentions_terms: [stft, bleed, artifacts, musdb18]
 ---
 
 Most explanations of AI stem separation either skip the technical details entirely or bury you in academic terminology. Neither is particularly useful if you're trying to understand why the tools work the way they do, why they fail where they fail, and which ones you should actually be using.

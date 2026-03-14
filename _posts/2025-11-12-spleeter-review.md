@@ -4,6 +4,8 @@ title: "Spleeter Review: Still Worth Using in 2025?"
 date: 2025-11-12
 description: "Spleeter was the go-to free stem splitter when it launched. Five years later, is it still competitive? An honest look at what it does well and where it falls short."
 tags: Review
+about_terms: [spleeter, music-source-separation, stem-splitter]
+mentions_terms: [musdb18, demucs, htdemucs, bleed]
 ---
 
 When Deezer released Spleeter in 2019, it was a legitimate moment for music production. Tools that could separate vocals had existed before, but most were slow, expensive, or produced output too degraded to use. Spleeter was fast, free, open-source, and ran on consumer hardware. It changed what producers assumed was possible with off-the-shelf software.

@@ -4,6 +4,8 @@ title: "Why Stem Splitters Aren't Perfect: Bleed, Artifacts, and What Causes The
 date: 2025-10-08
 description: "Stem splitters produce bleed and artifacts because of frequency overlap. Here's what causes these problems and when they matter most."
 tags: Guide
+about_terms: [bleed, artifacts, stem-splitter]
+mentions_terms: [musdb18, frequency, spectrogram, htdemucs]
 ---
 
 If you've run a track through a stem splitter and noticed that the vocal stem has a faint hi-hat in it, or the drum stem has a ghost of the bass guitar, you've encountered bleed. It's not a glitch, it's not a sign of a broken tool, and it doesn't mean the technology doesn't work. It's an inherent byproduct of what the AI is actually doing.

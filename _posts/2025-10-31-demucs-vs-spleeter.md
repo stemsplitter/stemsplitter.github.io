@@ -4,6 +4,8 @@ title: "Demucs vs Spleeter: Which Open-Source Stem Splitter Is Actually Better?"
 date: 2025-10-31
 description: "Demucs and Spleeter are the two most well-known open-source stem splitters. Here's an honest comparison of quality, speed, and when to use each."
 tags: Comparison
+about_terms: [demucs, spleeter, music-source-separation]
+mentions_terms: [htdemucs, musdb18, stem-splitter, bleed]
 ---
 
 Both Demucs and Spleeter landed around 2019, and at the time they both felt like a major step forward for anyone doing production work. Spleeter came first, from Deezer Research, and got a lot of attention because it was fast, accessible, and actually worked. Demucs followed from Meta AI Research and has since had years of active development that Spleeter simply hasn't had. The result is two tools that started near each other and have diverged considerably since.

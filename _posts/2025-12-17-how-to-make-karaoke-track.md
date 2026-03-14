@@ -4,6 +4,8 @@ title: "How to Make a Karaoke Track Using a Stem Splitter"
 date: 2025-12-17
 description: "Making a karaoke track with a stem splitter takes about two minutes. Here's how to do it, which tracks work well, and what to expect."
 tags: Tutorial
+about_terms: [karaoke-track, instrumental, vocal-isolation]
+mentions_terms: [stem-splitter, bleed, music-source-separation, a-cappella]
 ---
 
 You've got a song stuck in your head, you want to sing it, and you need the version without the lead vocal. A stem splitter can get you there in about 2 minutes, and you don't need any music production knowledge to pull it off.

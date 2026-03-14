@@ -4,6 +4,8 @@ title: "4-Stem vs 6-Stem Separation: Which One Do You Actually Need?"
 date: 2025-10-22
 description: "Most producers don't need 6-stem separation. Here's what each stem count actually gives you and when the extra granularity is worth it."
 tags: Guide
+about_terms: [stem-splitter, music-source-separation, other-stem]
+mentions_terms: [drum-stem, bass-stem, vocal-stem, bleed, demucs]
 ---
 
 If you've spent any time with a stem splitter, you've probably noticed that some tools offer 4-stem separation and others advertise 6 or more. It sounds like more is better. It usually isn't, at least not for most people.
