@@ -1,0 +1,71 @@
+title: Does Audio Format Affect Stem Separation Quality?
+subtitle: SDR benchmark across 6 audio formats on 20 MUSDB18-7s test tracks using
+  htdemucs_ft
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T11:47:24'
+model: htdemucs_ft
+dataset: MUSDB18-7s
+dataset_url: https://zenodo.org/record/1117372
+n_tracks: 20
+stems:
+- vocals
+- drums
+- bass
+- other
+key_finding: MP3 128kbps input reduces mean SDR by 0.24 dB compared to WAV 24-bit
+  (7.8 dB vs 8.04 dB)
+formats:
+- id: wav_24
+  label: WAV 24-bit
+  category: lossless
+  sdr_vocals: 8.86
+  sdr_drums: 9.95
+  sdr_bass: 9.52
+  sdr_other: 3.85
+  sdr_mean: 8.04
+  delta_from_wav24: 0.0
+- id: wav_16
+  label: WAV 16-bit
+  category: lossless
+  sdr_vocals: 8.86
+  sdr_drums: 10.01
+  sdr_bass: 9.48
+  sdr_other: 3.82
+  sdr_mean: 8.04
+  delta_from_wav24: 0.0
+- id: mp3_320
+  label: MP3 320kbps
+  category: lossy
+  sdr_vocals: 8.82
+  sdr_drums: 9.93
+  sdr_bass: 9.52
+  sdr_other: 3.69
+  sdr_mean: 7.99
+  delta_from_wav24: -0.05
+- id: mp3_192
+  label: MP3 192kbps
+  category: lossy
+  sdr_vocals: 8.78
+  sdr_drums: 9.92
+  sdr_bass: 9.42
+  sdr_other: 3.82
+  sdr_mean: 7.98
+  delta_from_wav24: -0.06
+- id: mp3_128
+  label: MP3 128kbps
+  category: lossy
+  sdr_vocals: 8.49
+  sdr_drums: 9.69
+  sdr_bass: 9.46
+  sdr_other: 3.57
+  sdr_mean: 7.8
+  delta_from_wav24: -0.24
+- id: aac_256
+  label: AAC 256kbps
+  category: lossy
+  sdr_vocals: 8.78
+  sdr_drums: 9.91
+  sdr_bass: 9.57
+  sdr_other: 3.69
+  sdr_mean: 7.99
+  delta_from_wav24: -0.05
