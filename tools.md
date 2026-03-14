@@ -12,16 +12,16 @@ This page covers the major stem splitter tools currently available, organized by
 | Tool | Type | Price | Best For |
 |---|---|---|---|
 | [StemSplit.io](https://stemsplit.io) | Online | Free / Paid | Multi-stem production use |
-| LALAL.AI | Online | Credits | Clean vocal isolation |
-| Gaudio Studio | Online | Paid | Professional fidelity |
-| Moises | Online / Mobile | Free / Paid | Musicians who need extras |
-| BandLab Splitter | Online | Free | Quick one-off separations |
-| UVR5 | Desktop | Free | Advanced control, batch work |
-| Demucs / HTDemucs | Self-hosted | Free | Best raw quality |
-| Spleeter | Self-hosted | Free | Speed, batch pipelines |
-| iZotope RX | Desktop | Paid (~$99+) | Restoration + separation |
-| Ableton Live 12 | DAW native | Included | Ableton users |
-| Logic Pro (v11+) | DAW native | Included ($200) | Mac / Logic users |
+| [LALAL.AI](https://www.lalal.ai) | Online | Credits | Clean vocal isolation |
+| [Gaudio Studio](https://gaudiolab.com) | Online | Paid | Professional fidelity |
+| [Moises](https://moises.ai) | Online / Mobile | Free / Paid | Musicians who need extras |
+| [BandLab Splitter](https://www.bandlab.com/tools/splitter) | Online | Free | Quick one-off separations |
+| [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) | Desktop | Free | Advanced control, batch work |
+| [Demucs / HTDemucs](https://github.com/facebookresearch/demucs) | Self-hosted | Free | Best raw quality |
+| [Spleeter](https://github.com/deezer/spleeter) | Self-hosted | Free | Speed, batch pipelines |
+| [iZotope RX](https://www.izotope.com/en/products/rx.html) | Desktop | Paid (~$99+) | Restoration + separation |
+| [Ableton Live 12](https://www.ableton.com/en/live-manual/12/stem-separation/) | DAW native | Included | Ableton users |
+| [Logic Pro (v11+)](https://support.apple.com/guide/logicpro/stem-splitter-overview-lp10289b6b6/mac) | DAW native | Included ($200) | Mac / Logic users |
 
 ---
 
