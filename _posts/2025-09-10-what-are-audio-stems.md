@@ -71,4 +71,4 @@ Any producer, for the first time, can extract a vocal from a song they didn't ma
 
 [The complete guide to stem splitting]({{ '/complete-guide-stem-splitting/' | relative_url }}) covers the full landscape of tools and use cases. If you're specifically looking to work with stems in a DAW, [bringing stems into your DAW]({{ '/using-stems-in-your-daw/' | relative_url }}) covers the practical workflow.
 
-The underlying technology draws on decades of academic research in [music source separation](https://en.wikipedia.org/wiki/Music_source_separation), but it's the recent deep learning approaches, especially Meta AI's [Demucs project](/tools/#demucs), that pushed quality to the point where these tools became actually useful for everyday music production.
+The underlying technology draws on decades of academic research in [stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation), but it's the recent deep learning approaches, especially Meta AI's [Demucs project](/tools/#demucs), that pushed quality to the point where these tools became actually useful for everyday music production.

@@ -28,7 +28,7 @@ This is different from remixing an isolated vocal because someone posted the a c
 
 ## Where this technology came from
 
-The idea of separating mixed audio into its sources is called Music Source Separation (MSS), and researchers have been working on it for a long time, see [Wikipedia's overview](https://en.wikipedia.org/wiki/Music_source_separation) for the academic history.
+The idea of separating mixed audio into its sources is called Music Source Separation (MSS), and researchers have been working on it for a long time, see [Wikipedia's overview of stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) for the academic history.
 
 Early approaches, dating back to the 1990s and 2000s, relied on signal processing tricks: matrix stereo decoding, phase cancellation, non-negative matrix factorization. These worked poorly and were narrowly applicable. The "karaoke mode" on old amplifiers that removed center-panned vocals? That's a phase cancellation trick, and it's why the bass guitar often disappeared too.
 

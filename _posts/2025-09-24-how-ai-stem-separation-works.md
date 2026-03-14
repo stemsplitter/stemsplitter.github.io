@@ -34,7 +34,7 @@ This is useful because it makes the frequency content of your audio visible and 
 
 The neural network essentially "looks at" the spectrogram image of a mixed track and tries to figure out which pixels belong to the drums, which belong to the vocals, and so on. It does this by learning what each instrument's spectrogram pattern typically looks like, from having processed thousands of training examples.
 
-See the [Wikipedia article on music source separation](https://en.wikipedia.org/wiki/Music_source_separation) for more of the signal processing history behind this approach.
+See the [Wikipedia article on stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) for more of the signal processing history behind this approach.
 
 ## How neural networks learned to do this
 

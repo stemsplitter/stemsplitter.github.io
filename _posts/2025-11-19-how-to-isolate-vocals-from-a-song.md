@@ -10,7 +10,7 @@ mentions_terms: [bleed, artifacts, htdemucs, vr-architecture, a-cappella]
 
 Say you've got a track, something commercially released with a clean mix, and you want just the vocal. Maybe you're making a remix, maybe you're building a karaoke version, maybe you want to analyze the performance or do some pitch correction work on a sample. Whatever the reason, you want clean vocal audio and you want it without spending hours in a DAW trying to do it by hand.
 
-AI stem splitting is genuinely good at this now. Not perfect, but good enough to be useful on most material if you go about it the right way. The underlying technology, formally called [music source separation](https://en.wikipedia.org/wiki/Music_source_separation), has advanced substantially since 2020 and the gap between research benchmarks and real-world usability has closed considerably.
+AI stem splitting is genuinely good at this now. Not perfect, but good enough to be useful on most material if you go about it the right way. The underlying technology, formally called [stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation), has advanced substantially since 2020 and the gap between research benchmarks and real-world usability has closed considerably.
 
 ## What your source file does to the result
 

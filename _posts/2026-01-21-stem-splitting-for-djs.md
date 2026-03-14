@@ -18,7 +18,7 @@ For most of DJ history, your options with a track were: play the whole thing, EQ
 
 Acapellas changed that slightly, but official acapellas exist for a tiny fraction of released music. Stem splitting effectively creates an acapella (and an instrumental) from any song that exists. That's a significant shift in what a DJ can do with their library.
 
-The [Wikipedia overview of music source separation](https://en.wikipedia.org/wiki/Music_source_separation) has good context on how the field developed from academic research into something practical enough for consumer tools. What was PhD-level research 10 years ago is now a 2-minute web upload.
+The [Wikipedia overview of stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) has good context on how the field developed from academic research into something practical enough for consumer tools. What was PhD-level research 10 years ago is now a 2-minute web upload.
 
 ## The difference between DJ stems and production stems
 

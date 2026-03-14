@@ -47,7 +47,7 @@ This is something that takes a little while to notice, but it's real: isolating 
 
 When you isolate a bass line and play it alongside the isolated chord stem, you start hearing things like how the bass outlines chord tones on the downbeat, or how it creates tension by sitting on a non-chord tone against the harmony. That's music theory made audible. It's the kind of thing you can read about in any textbook, but hearing it in a real recording makes it click differently.
 
-The same applies to rhythm. Pulling out just the drums and just the bass from a funk track, then playing them together, makes the groove relationship between those two instruments obvious in a way that no amount of description can replicate. According to [Wikipedia's overview of music source separation](https://en.wikipedia.org/wiki/Music_source_separation), this kind of analytical listening has applications well beyond practice, including musicology and education. The practical application for musicians is straightforward: use it.
+The same applies to rhythm. Pulling out just the drums and just the bass from a funk track, then playing them together, makes the groove relationship between those two instruments obvious in a way that no amount of description can replicate. According to [Wikipedia's overview of stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation), this kind of analytical listening has applications well beyond practice, including musicology and education. The practical application for musicians is straightforward: use it.
 
 ## One thing most musicians overlook
 

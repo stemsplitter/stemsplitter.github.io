@@ -14,7 +14,7 @@ Understanding the models helps you make better choices about which tools to trus
 
 ## Why the model matters more than the app name
 
-[Music source separation](https://en.wikipedia.org/wiki/Music_source_separation) as a field is largely built on open-source research. The major models, Demucs, MDX-Net, HTDemucs, and the VR Architecture variants, are all publicly available. Any developer can build an application on top of them, and many do.
+[Stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) as a field is largely built on open-source research. The major models, Demucs, MDX-Net, HTDemucs, and the VR Architecture variants, are all publicly available. Any developer can build an application on top of them, and many do.
 
 This means two apps that look totally different on the surface might be producing identical outputs. Conversely, two apps that look similar might be using different model versions or fine-tunes that produce noticeably different quality.
 

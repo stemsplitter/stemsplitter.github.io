@@ -95,7 +95,7 @@ An audio recording where each instrument or sound source is captured on its own 
 
 ### Music source separation {#music-source-separation}
 
-The technical field focused on isolating individual audio sources from a mixed recording. Stem splitting is a practical application of music source separation research. The field draws on signal processing, machine learning, and psychoacoustics, and has advanced significantly since the introduction of deep learning approaches. [Wikipedia's article on music source separation](https://en.wikipedia.org/wiki/Music_source_separation) provides a useful overview of the history and methodology.
+The technical field focused on isolating individual audio sources from a mixed recording. Stem splitting is a practical application of music source separation research. The field draws on signal processing, machine learning, and psychoacoustics, and has advanced significantly since the introduction of deep learning approaches. [Wikipedia's article on stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) provides a useful overview of the history and methodology.
 
 ### Online stem splitter {#online-stem-splitter}
 

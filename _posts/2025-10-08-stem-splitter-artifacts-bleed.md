@@ -32,7 +32,7 @@ In the spectrogram that the AI analyzes, the kick and the bass guitar are fighti
 
 Vocals live mostly in the 300Hz-3kHz range. So do acoustic guitars, piano, snare drums, horns, and dozens of other instruments. Reverb tails from the snare spread across the whole frequency spectrum including the vocal range. Any instrument that shares frequency space with another creates the potential for bleed in both directions.
 
-The AI can't separate what physics mixed together. It can only make its best statistical guess about which frequencies belonged to which source, and those guesses are imperfect. This frequency overlap challenge is central to [music source separation](https://en.wikipedia.org/wiki/Music_source_separation) research and is why it remains an open problem even with modern deep learning.
+The AI can't separate what physics mixed together. It can only make its best statistical guess about which frequencies belonged to which source, and those guesses are imperfect. This frequency overlap challenge is central to [stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) research and is why it remains an open problem even with modern deep learning.
 
 ## When you'll notice it most
 

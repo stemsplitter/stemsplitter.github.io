@@ -18,7 +18,7 @@ Stem count is just how many separate audio outputs the model produces from a sin
 
 That sounds obvious, but the important thing to understand is that more stems doesn't mean the model is more capable overall. It means the model has been trained to identify and separate more specific sources. That added specificity comes with trade-offs, which we'll get to.
 
-The underlying [AI process]({{ "/how-ai-stem-separation-works/" | relative_url }}) is the same regardless of stem count -- the field of [music source separation](https://en.wikipedia.org/wiki/Music_source_separation) frames it as estimating the probability that a given sound belongs to a given source, and that calculation happens for each output the model was trained to produce. More outputs means more competing estimates, which means more room for errors.
+The underlying [AI process]({{ "/how-ai-stem-separation-works/" | relative_url }}) is the same regardless of stem count -- the field of [stem separation](https://en.wikipedia.org/wiki/Stem_(audio)#Stem_separation) frames it as estimating the probability that a given sound belongs to a given source, and that calculation happens for each output the model was trained to produce. More outputs means more competing estimates, which means more room for errors.
 
 ## The standard 4-stem breakdown
 
