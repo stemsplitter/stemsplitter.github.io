@@ -14,6 +14,14 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Use the local venv if present, otherwise fall back to system python3
+if [ -f "$SCRIPT_DIR/.venv/bin/python3" ]; then
+  PYTHON="$SCRIPT_DIR/.venv/bin/python3"
+else
+  PYTHON="python3"
+fi
+alias python3="$PYTHON"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 RESULTS_DIR="$SCRIPT_DIR/results"
 RAW_DIR="$RESULTS_DIR/raw"
@@ -37,14 +45,14 @@ echo ""
 # Published as an interim push so something goes live quickly
 # -------------------------------------------------------------------
 echo "[1/5] Test 4: Stem Reconstruction Fidelity (~45 min)"
-python3 test4_reconstruction.py --output "$RESULTS_DIR/reconstruction.yml"
+"$PYTHON" test4_reconstruction.py --output "$RESULTS_DIR/reconstruction.yml"
 
 cp "$RESULTS_DIR/reconstruction.yml" "$DATA_DIR/"
 
 # Write meta.yml with current run info
-python3 - <<'PYEOF'
+DATA_DIR="$DATA_DIR" "$PYTHON" - <<'PYEOF'
 import yaml, datetime, sys, os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) if '__file__' in dir() else '.')
 try:
     import demucs
     dv = demucs.__version__
@@ -69,7 +77,9 @@ PYEOF
 cd "$REPO_ROOT"
 git add _data/research/
 git commit -m "Add Test 4 reconstruction fidelity benchmark results"
+git stash
 git pull --rebase origin main
+git stash pop || true
 git push origin main
 echo "  Test 4 published."
 
@@ -80,13 +90,15 @@ cd "$SCRIPT_DIR"
 # -------------------------------------------------------------------
 echo ""
 echo "[2/5] Test 1: Input Format Degradation (~60 min)"
-python3 test1_format.py --output "$RESULTS_DIR/format_quality.yml"
+"$PYTHON" test1_format.py --output "$RESULTS_DIR/format_quality.yml"
 
 cp "$RESULTS_DIR/format_quality.yml" "$DATA_DIR/"
 cd "$REPO_ROOT"
 git add _data/research/format_quality.yml
 git commit -m "Add Test 1 format quality benchmark results"
+git stash
 git pull --rebase origin main
+git stash pop || true
 git push origin main
 echo "  Test 1 published."
 
@@ -98,7 +110,7 @@ cd "$SCRIPT_DIR"
 # -------------------------------------------------------------------
 echo ""
 echo "[3/5] Test 2: Model Variant Comparison (~3 hours)"
-python3 test2_models.py \
+"$PYTHON" test2_models.py \
   --output "$RESULTS_DIR/model_comparison.yml" \
   --raw-output "$RAW_DIR/test2_tracks.json"
 
@@ -106,7 +118,9 @@ cp "$RESULTS_DIR/model_comparison.yml" "$DATA_DIR/"
 cd "$REPO_ROOT"
 git add _data/research/model_comparison.yml
 git commit -m "Add Test 2 model comparison benchmark results"
+git stash
 git pull --rebase origin main
+git stash pop || true
 git push origin main
 echo "  Test 2 published."
 
@@ -117,7 +131,7 @@ cd "$SCRIPT_DIR"
 # -------------------------------------------------------------------
 echo ""
 echo "[4/5] Test 3: Track Characteristic Breakdown (~5 min)"
-python3 test3_genre.py \
+"$PYTHON" test3_genre.py \
   --input "$RAW_DIR/test2_tracks.json" \
   --output "$RESULTS_DIR/genre_performance.yml"
 
@@ -126,7 +140,7 @@ python3 test3_genre.py \
 # -------------------------------------------------------------------
 echo ""
 echo "[5/5] Test 5: Complexity Prediction (~30 min)"
-python3 test5_complexity.py \
+"$PYTHON" test5_complexity.py \
   --input "$RAW_DIR/test2_tracks.json" \
   --output "$RESULTS_DIR/complexity.yml"
 
@@ -139,7 +153,7 @@ cp "$RESULTS_DIR/genre_performance.yml" "$DATA_DIR/"
 cp "$RESULTS_DIR/complexity.yml" "$DATA_DIR/"
 
 # Update meta.yml with all tests completed
-python3 - <<'PYEOF'
+DATA_DIR="$DATA_DIR" "$PYTHON" - <<'PYEOF'
 import yaml, datetime, os, torch
 try:
     import demucs; dv = demucs.__version__
@@ -165,7 +179,7 @@ echo "Generating blog post..."
 POST_DATE=$(date +%Y-%m-%d)
 POST_PATH="$POSTS_DIR/${POST_DATE}-htdemucs-benchmark-results.md"
 
-python3 generate_blog_post.py \
+"$PYTHON" generate_blog_post.py \
   --results-dir "$RESULTS_DIR" \
   --output "$POST_PATH"
 
@@ -173,7 +187,9 @@ python3 generate_blog_post.py \
 cd "$REPO_ROOT"
 git add _data/research/ _posts/
 git commit -m "Add complete HTDemucs benchmark results and announcement post ($(date +%Y-%m-%d))"
+git stash
 git pull --rebase origin main
+git stash pop || true
 git push origin main
 
 END_TIME=$(date +%s)
