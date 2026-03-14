@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+{% assign meta = site.data.research.meta %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "Research", "item": "{{ site.url }}/research/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "{{ site.url }}/research/",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",
+  "url": "{{ site.url }}/research/",
+  "dateModified": "{% if meta %}{{ meta.run_timestamp }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/about/",
+    "name": "{{ site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "about": [
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#htdemucs", "name": "HTDemucs", "inDefinedTermSet": "{{ site.url }}/glossary/"},
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#music-source-separation", "name": "Music source separation", "inDefinedTermSet": "{{ site.url }}/glossary/", "sameAs": "http://dbpedia.org/resource/Audio_source_separation"},
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#stem-splitter", "name": "Stem splitter", "inDefinedTermSet": "{{ site.url }}/glossary/"}
+  ],
+  "citation": {
+    "@type": "Dataset",
+    "name": "MUSDB18",
+    "description": "A dataset of 150 full-length music tracks with isolated stems, used as the standard benchmark for music source separation research.",
+    "url": "https://zenodo.org/record/1117372",
+    "sameAs": "https://zenodo.org/record/1117372"
+  }
+}
+</script>
+
+<div class="page-wrapper">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if meta %}
+      <p class="research-meta-line">
+        Last run: {{ meta.run_date }} &middot;
+        Dataset: {{ meta.dataset }} &middot;
+        Device: {{ meta.device }}
+      </p>
+      {% endif %}
+    </header>
+
+    <div class="research-hub-intro">
+      {{ content }}
+    </div>
+
+    <div class="research-card-grid">
+
+      {% assign t4 = site.data.research.reconstruction %}
+      <a href="/research/reconstruction-fidelity/" class="research-card {% unless t4 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 4</div>
+        <div class="research-card-title">Stem Reconstruction Fidelity</div>
+        {% if t4 %}
+        <div class="research-card-finding">{{ t4.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+      {% assign t1 = site.data.research.format_quality %}
+      <a href="/research/format-quality/" class="research-card {% unless t1 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 1</div>
+        <div class="research-card-title">Input Format Quality Impact</div>
+        {% if t1 %}
+        <div class="research-card-finding">{{ t1.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+      {% assign t2 = site.data.research.model_comparison %}
+      <a href="/research/model-comparison/" class="research-card {% unless t2 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 2</div>
+        <div class="research-card-title">HTDemucs Model Comparison</div>
+        {% if t2 %}
+        <div class="research-card-finding">{{ t2.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+      {% assign t3 = site.data.research.genre_performance %}
+      <a href="/research/genre-performance/" class="research-card {% unless t3 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 3</div>
+        <div class="research-card-title">Performance by Track Type</div>
+        {% if t3 %}
+        <div class="research-card-finding">{{ t3.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+      {% assign t5 = site.data.research.complexity %}
+      <a href="/research/complexity-prediction/" class="research-card {% unless t5 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 5</div>
+        <div class="research-card-title">What Predicts Separation Quality</div>
+        {% if t5 %}
+        <div class="research-card-finding">{{ t5.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,291 @@
+---
+layout: default
+---
+
+{% assign data = site.data.research[page.data_key] %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "Research", "item": "{{ site.url }}/research/"},
+    {"@type": "ListItem", "position": 3, "name": "{{ page.title | escape }}", "item": "{{ site.url }}{{ page.url }}"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "{{ site.url }}{{ page.url }}",
+  "headline": "{% if data %}{{ data.title | escape }}{% else %}{{ page.title | escape }}{% endif %}",
+  "description": "{{ page.description | escape }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "datePublished": "{% if data %}{{ data.run_timestamp }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+  "dateModified": "{% if data %}{{ data.run_timestamp }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/about/",
+    "name": "{{ site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "about": [
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#htdemucs", "name": "HTDemucs", "inDefinedTermSet": "{{ site.url }}/glossary/"},
+    {"@type": "DefinedTerm", "@id": "{{ site.url }}/glossary/#music-source-separation", "name": "Music source separation", "inDefinedTermSet": "{{ site.url }}/glossary/", "sameAs": "http://dbpedia.org/resource/Audio_source_separation"}
+  ],
+  "isPartOf": {"@type": "WebPage", "url": "{{ site.url }}/research/", "name": "Research"},
+  "citation": {
+    "@type": "Dataset",
+    "name": "MUSDB18",
+    "url": "https://zenodo.org/record/1117372",
+    "sameAs": "https://zenodo.org/record/1117372"
+  }
+}
+</script>
+
+<div class="page-wrapper">
+  <div class="container research-post-container">
+
+    <nav class="research-breadcrumb">
+      <a href="/research/">Research</a> <span>/</span>
+      <span>{% if data %}{{ data.title }}{% else %}{{ page.title }}{% endif %}</span>
+    </nav>
+
+    {% if data %}
+    <header class="page-header">
+      <h1 class="page-title">{{ data.title }}</h1>
+      <p class="research-post-subtitle">{{ data.subtitle }}</p>
+      <div class="research-meta-bar">
+        <span>Run: {{ data.run_date }}</span>
+        {% if data.model %}<span>Model: {{ data.model }}</span>{% endif %}
+        {% if data.device %}<span>Device: {{ data.device }}</span>{% endif %}
+        <span>Dataset: <a href="{{ data.dataset_url }}" rel="noopener" target="_blank">{{ data.dataset }}</a></span>
+        {% if data.n_tracks %}<span>Tracks: {{ data.n_tracks }}</span>{% endif %}
+      </div>
+    </header>
+
+    {% if data.key_finding %}
+    <div class="research-key-finding">
+      <span class="research-finding-label">Key finding</span>
+      {{ data.key_finding }}
+    </div>
+    {% endif %}
+
+    {% else %}
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+    <div class="research-pending-notice">
+      <strong>Results pending.</strong> This page will populate automatically when the benchmark pipeline runs.
+    </div>
+    {% endif %}
+
+    <div class="research-post-content">
+      {{ content }}
+    </div>
+
+    {% if data %}
+
+    <!-- ===================== TEST-SPECIFIC TABLE RENDERING ===================== -->
+
+    {% if page.data_key == "format_quality" and data.formats %}
+    <h2 class="research-table-heading">SDR by Format and Stem</h2>
+    <p class="research-table-note">All values in dB. Higher is better. Delta shows change vs WAV 24-bit baseline.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Format</th>
+            <th>Vocals</th>
+            <th>Drums</th>
+            <th>Bass</th>
+            <th>Other</th>
+            <th>Mean SDR</th>
+            <th>Delta</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for fmt in data.formats %}
+          <tr class="{% if fmt.category == 'lossless' %}row-lossless{% else %}row-lossy{% endif %}">
+            <td><strong>{{ fmt.label }}</strong></td>
+            <td>{{ fmt.sdr_vocals }}</td>
+            <td>{{ fmt.sdr_drums }}</td>
+            <td>{{ fmt.sdr_bass }}</td>
+            <td>{{ fmt.sdr_other }}</td>
+            <td><strong>{{ fmt.sdr_mean }}</strong></td>
+            <td class="{% if fmt.delta_from_wav24 == 0 or fmt.delta_from_wav24 == nil %}delta-neutral{% elsif fmt.delta_from_wav24 < -1 %}delta-bad{% elsif fmt.delta_from_wav24 < 0 %}delta-warn{% else %}delta-neutral{% endif %}">
+              {% if fmt.delta_from_wav24 == 0 or fmt.delta_from_wav24 == nil %}baseline{% else %}{{ fmt.delta_from_wav24 }} dB{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {% if page.data_key == "model_comparison" and data.models %}
+    <h2 class="research-table-heading">Model Quality and Speed</h2>
+    <p class="research-table-note">SDR values in dB (median across {{ data.n_tracks }} tracks). Time is average seconds per 7-second clip on {{ data.device }}.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Vocals SDR</th>
+            <th>Drums SDR</th>
+            <th>Bass SDR</th>
+            <th>Other SDR</th>
+            <th>Mean SDR</th>
+            <th>Avg Time (s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% assign sorted_models = data.models | sort: "sdr_mean" | reverse %}
+          {% for model in sorted_models %}
+          <tr>
+            <td><strong>{{ model.label }}</strong></td>
+            <td>{{ model.sdr_vocals }}</td>
+            <td>{{ model.sdr_drums }}</td>
+            <td>{{ model.sdr_bass }}</td>
+            <td>{{ model.sdr_other }}</td>
+            <td><strong>{{ model.sdr_mean }}</strong></td>
+            <td>{{ model.avg_time_seconds }}s</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {% if page.data_key == "genre_performance" and data.quality_tiers %}
+    <h2 class="research-table-heading">Performance by Quality Tier</h2>
+    <p class="research-table-note">Tracks grouped by their overall separation quality (vocals SDR tertile). SDR values in dB.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Tracks</th>
+            <th>Vocals SDR</th>
+            <th>Drums SDR</th>
+            <th>Bass SDR</th>
+            <th>Other SDR</th>
+            <th>Mean SDR</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for tier in data.quality_tiers %}
+          <tr>
+            <td>{{ tier.label }}</td>
+            <td>{{ tier.n_tracks }}</td>
+            <td>{{ tier.sdr_vocals }}</td>
+            <td>{{ tier.sdr_drums }}</td>
+            <td>{{ tier.sdr_bass }}</td>
+            <td>{{ tier.sdr_other }}</td>
+            <td><strong>{{ tier.sdr_mean }}</strong></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if data.has_genre_data and data.genres %}
+    <h2 class="research-table-heading">Performance by Genre</h2>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Genre</th>
+            <th>Tracks</th>
+            <th>Vocals SDR</th>
+            <th>Drums SDR</th>
+            <th>Bass SDR</th>
+            <th>Other SDR</th>
+            <th>Mean SDR</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% assign sorted_genres = data.genres | sort: "sdr_mean" | reverse %}
+          {% for genre in sorted_genres %}
+          <tr>
+            <td>{{ genre.label }}</td>
+            <td>{{ genre.n_tracks }}</td>
+            <td>{{ genre.sdr_vocals }}</td>
+            <td>{{ genre.sdr_drums }}</td>
+            <td>{{ genre.sdr_bass }}</td>
+            <td>{{ genre.sdr_other }}</td>
+            <td><strong>{{ genre.sdr_mean }}</strong></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% if page.data_key == "reconstruction" and data.modes %}
+    <h2 class="research-table-heading">Reconstruction Metrics by Stem Count</h2>
+    <p class="research-table-note">Lower MSE = better. Higher correlation = better. More negative dB difference = better (difference signal is quieter relative to original).</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Mode</th>
+            <th>Tracks</th>
+            <th>Mean MSE</th>
+            <th>Correlation (r)</th>
+            <th>Difference (dB)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for mode in data.modes %}
+          <tr>
+            <td>{{ mode.label }}</td>
+            <td>{{ mode.n_tracks }}</td>
+            <td>{{ mode.mean_mse }}</td>
+            <td>{{ mode.mean_correlation }}</td>
+            <td>{{ mode.mean_db_difference }} dB</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {% if page.data_key == "complexity" and data.top_vocal_predictors %}
+    <h2 class="research-table-heading">Top Predictors of Vocal Separation Quality</h2>
+    <p class="research-table-note">Pearson r with vocal SDR. Positive r = higher feature value predicts better separation. Negative r = higher value predicts worse separation.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Audio Feature</th>
+            <th>Pearson r</th>
+            <th>n tracks</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for pred in data.top_vocal_predictors %}
+          <tr>
+            <td>{{ pred.feature_label }}</td>
+            <td class="{% if pred.pearson_r > 0.3 %}delta-good{% elsif pred.pearson_r < -0.3 %}delta-bad{% else %}delta-neutral{% endif %}">
+              {{ pred.pearson_r }}
+            </td>
+            <td>{{ pred.n }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {% endif %}
+
+  </div>
+</div>

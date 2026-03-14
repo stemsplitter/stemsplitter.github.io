@@ -20,6 +20,7 @@ Aaron tests tools against a consistent reference set of tracks before publishing
 - Tool comparisons and reviews: Demucs vs Spleeter, free vs paid options, online vs desktop, LALAL.AI vs StemSplit.io
 - Use cases: remixing, sampling, DJs, music learning, audio restoration, beatmaking
 - Glossary of key terms in stem splitting and music source separation
+- Original research: reproducible HTDemucs benchmark data run locally on Apple M4 using the MUSDB18-7s dataset
 
 ## Important Pages
 
@@ -27,6 +28,7 @@ Aaron tests tools against a consistent reference set of tracks before publishing
 - [FAQ]({{ site.url }}/faq/): Answers to the most common stem splitter questions, including what the best options are and how they work
 - [Tools]({{ site.url }}/tools/): Comparison of every major stem splitter tool with pricing and use case guidance
 - [Glossary]({{ site.url }}/glossary/): Definitions of technical terms used in stem splitting and AI audio tools
+- [Research]({{ site.url }}/research/): Original HTDemucs benchmark data -- format quality, model comparison, reconstruction fidelity, track characteristics, complexity prediction
 - [Blog & Guides]({{ site.url }}/archive): Full archive of all articles
 - [Sitemap]({{ site.url }}/sitemap.xml)
 

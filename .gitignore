@@ -1,1 +1,13 @@
-﻿_site
+_site
+
+# Benchmark raw data (large, local only -- only _data/research/*.yml gets committed)
+scripts/benchmark/results/
+data/musdb18/
+~/musdb18/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
