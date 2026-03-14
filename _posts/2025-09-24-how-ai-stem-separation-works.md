@@ -44,7 +44,7 @@ The training process works like this: feed the network the mixed spectrogram, as
 
 The result is a model that can look at a spectrogram it's never seen before (a brand new song not in its training data) and produce a reasonable prediction of what each stem contains.
 
-The [Demucs project from Meta AI](https://github.com/facebookresearch/demucs) is the most significant open-source implementation of this, and its development over several versions tracks the progress of the field quite closely. The current generation, HTDemucs, is described in the [original research paper](https://arxiv.org/abs/2111.03600) and represents the current state of the art for most material.
+The [Demucs project from Meta AI](/tools/#demucs) is the most significant open-source implementation of this, and its development over several versions tracks the progress of the field quite closely. The current generation, HTDemucs, is described in the [original research paper](https://arxiv.org/abs/2111.03600) and represents the current state of the art for most material.
 
 ## The 3 main processing steps
 

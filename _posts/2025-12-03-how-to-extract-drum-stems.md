@@ -34,9 +34,9 @@ The [artifacts and bleed post]({{ "/stem-splitter-artifacts-bleed/" | relative_u
 
 The honest answer is that tool quality for drum extraction varies more by source material than by which specific app you use, since most are running the same underlying models. That said, some implementations are better than others.
 
-**HTDemucs** is the current standard for 4-stem separation and handles drums competitively. Its hybrid domain architecture (processing both waveform and spectrogram data) means it captures transients well while also using frequency-domain information to minimize bleed. You can access it through several tools, including the open-source [Demucs package](https://github.com/facebookresearch/demucs).
+**HTDemucs** is the current standard for 4-stem separation and handles drums competitively. Its hybrid domain architecture (processing both waveform and spectrogram data) means it captures transients well while also using frequency-domain information to minimize bleed. You can access it through several tools, including the open-source [Demucs package](/tools/#demucs).
 
-**Logic Pro 11** on Mac has a built-in stem splitter, and [Ableton Live](https://www.ableton.com/en/live-manual/12/stem-separation/) added stem separation features as well. Both are convenient if you're already in those DAWs, though neither consistently outperforms a dedicated separation tool on drum stems.
+**Logic Pro 11** on Mac has a built-in stem splitter, and [Ableton Live](/tools/#ableton-live-12) added stem separation features as well. Both are convenient if you're already in those DAWs, though neither consistently outperforms a dedicated separation tool on drum stems.
 
 **[StemSplit.io](https://stemsplit.io)** is a reliable web option if you don't want to deal with software installation. It handles common formats cleanly and is a good starting point for testing your material.
 

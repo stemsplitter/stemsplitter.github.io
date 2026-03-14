@@ -12,7 +12,7 @@ Here's what each actually gives you, and when you'd genuinely reach for one over
 
 ## What the stem count actually refers to
 
-Stem count is just how many separate audio outputs the model produces from a single mixed track. A 4-stem model splits the audio into 4 files. A 6-stem model splits it into 6. Tools like [Demucs](https://github.com/facebookresearch/demucs), the open-source model from Meta AI Research, support both configurations and are worth knowing about even if you use an online tool built on top of them.
+Stem count is just how many separate audio outputs the model produces from a single mixed track. A 4-stem model splits the audio into 4 files. A 6-stem model splits it into 6. Tools like [Demucs](/tools/#demucs), the open-source model from Meta AI Research, support both configurations and are worth knowing about even if you use an online tool built on top of them.
 
 That sounds obvious, but the important thing to understand is that more stems doesn't mean the model is more capable overall. It means the model has been trained to identify and separate more specific sources. That added specificity comes with trade-offs, which we'll get to.
 

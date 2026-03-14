@@ -12,7 +12,7 @@ The choice between online and desktop stem splitting isn't really about which on
 
 It's easy to assume the choice is just about convenience, but there's more to it than that. Online tools and desktop software often run different underlying models, with different optimization priorities. An online service might default to a model that handles pop and rock vocals cleanly but struggles with jazz. A desktop tool lets you choose the model yourself and swap it out if the first one doesn't perform well on your source material.
 
-The separation model matters, and [understanding the models](/demucs-mdxnet-htdemucs-models/) that underpin these tools gives you a realistic sense of what to expect from either approach. [Meta AI's Demucs repository](https://github.com/facebookresearch/demucs) is where the open-source model development happens, and reviewing what different versions were trained on makes the output quality differences less mysterious.
+The separation model matters, and [understanding the models](/demucs-mdxnet-htdemucs-models/) that underpin these tools gives you a realistic sense of what to expect from either approach. [Meta AI's Demucs repository](/tools/#demucs) is where the open-source model development happens, and reviewing what different versions were trained on makes the output quality differences less mysterious.
 
 ## What online tools get right
 
@@ -24,7 +24,7 @@ The accessibility angle is real too. A music teacher setting up ear training exe
 
 ## Where desktop software still has the edge
 
-Batch processing is the clearest case. If you're working through an album catalog, pulling stems from 50 tracks for a DJ set, or processing a sample library, uploading tracks one at a time to a web interface is genuinely painful. Desktop tools like [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) let you queue hundreds of files and walk away.
+Batch processing is the clearest case. If you're working through an album catalog, pulling stems from 50 tracks for a DJ set, or processing a sample library, uploading tracks one at a time to a web interface is genuinely painful. Desktop tools like [UVR5](/tools/#uvr5) let you queue hundreds of files and walk away.
 
 Desktop tools also give you the ability to pick your model directly. You're not relying on whatever the service has configured as default. If HTDemucs fine-tuned performs better on your specific source material than the standard version, you can use it. That level of control simply isn't available in most online tools.
 

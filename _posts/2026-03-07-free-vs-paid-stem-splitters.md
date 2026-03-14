@@ -42,7 +42,7 @@ Commercial licensing is another real consideration. Free tiers sometimes have te
 
 ## UVR5: the notable exception
 
-[Ultimate Vocal Remover (UVR5)](https://github.com/Anjok07/ultimatevocalremovergui) is free desktop software and it's genuinely powerful. It bundles access to open-source models including [Demucs](https://github.com/facebookresearch/demucs) from Meta AI Research and various MDX-Net variants. You can run multiple models, switch between them, tune settings, and process locally without upload limits. For someone who wants maximum control and quality without paying a subscription, it's the real answer.
+[Ultimate Vocal Remover (UVR5)](/tools/#uvr5) is free desktop software and it's genuinely powerful. It bundles access to open-source models including [Demucs](/tools/#demucs) from Meta AI Research and various MDX-Net variants. You can run multiple models, switch between them, tune settings, and process locally without upload limits. For someone who wants maximum control and quality without paying a subscription, it's the real answer.
 
 The trade-off is the learning curve. UVR5 is not a simple drag-and-drop interface. It requires installation, some understanding of the different models available, and willingness to experiment with settings. If you're comfortable in that environment, it's excellent. If you just want to paste in a link and get stems back in 60 seconds, it's not the right tool.
 

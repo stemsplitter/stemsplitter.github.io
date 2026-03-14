@@ -46,7 +46,7 @@ Isolating a vocal from a lo-fi live recording for archiving. You won't get a cle
 
 Extracting a clean enough melody from a rough demo to hand off to a session musician for re-recording. The stem doesn't need to be broadcast-quality; it just needs to be clear enough to communicate the part. That's a lower bar, and stem splitters often meet it.
 
-The model you use matters more in restoration-adjacent work than in standard stem splitting. [HTDemucs and MDX-Net models](/demucs-mdxnet-htdemucs-models/) have different strengths, and some are better at handling difficult source material than others. [Meta AI's Demucs repository](https://github.com/facebookresearch/demucs) documents what different model versions were optimized for, which is worth checking if you're choosing a model for a specific restoration task.
+The model you use matters more in restoration-adjacent work than in standard stem splitting. [HTDemucs and MDX-Net models](/demucs-mdxnet-htdemucs-models/) have different strengths, and some are better at handling difficult source material than others. [Meta AI's Demucs repository](/tools/#demucs) documents what different model versions were optimized for, which is worth checking if you're choosing a model for a specific restoration task.
 
 ## When you need proper restoration tools instead
 

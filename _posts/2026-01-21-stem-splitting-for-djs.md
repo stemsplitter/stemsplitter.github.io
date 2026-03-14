@@ -56,7 +56,7 @@ For pre-gig stem preparation, web-based tools are the fastest option. Upload the
 
 For integrating stems into your DJ workflow, most modern software handles audio file import fine. Rekordbox lets you load audio files and treats them like any other track. Serato handles imported audio the same way. The stem just appears as a track in your library, you cue it up like anything else.
 
-The UVR5 tool ([available on GitHub](https://github.com/Anjok07/ultimatevocalremovergui)) is worth knowing about if you're doing high-volume stem preparation and want to run things locally on your own machine. It's more technical to set up, but it's fast and free once it's running.
+The UVR5 tool ([available on GitHub](/tools/#uvr5)) is worth knowing about if you're doing high-volume stem preparation and want to run things locally on your own machine. It's more technical to set up, but it's fast and free once it's running.
 
 ## The limitations that still matter on a dance floor
 

@@ -34,7 +34,7 @@ The research community organized formal evaluation campaigns (SiSEC, the Signal 
 
 Then deep learning arrived.
 
-Around 2017, neural network approaches started dramatically outperforming everything before them. By training on multi-track studio recordings (specifically the MUSDB18 dataset, which contains 150 songs with separate stems), models learned what a kick drum "sounds like" in frequency terms versus what a bass guitar sounds like, and could start disentangling them. The research published by Meta AI's team on [Demucs](https://github.com/facebookresearch/demucs) represents one of the most significant milestones: a model that processes audio end-to-end using a waveform-based encoder-decoder architecture, later combined with spectrogram processing in HTDemucs.
+Around 2017, neural network approaches started dramatically outperforming everything before them. By training on multi-track studio recordings (specifically the MUSDB18 dataset, which contains 150 songs with separate stems), models learned what a kick drum "sounds like" in frequency terms versus what a bass guitar sounds like, and could start disentangling them. The research published by Meta AI's team on [Demucs](/tools/#demucs) represents one of the most significant milestones: a model that processes audio end-to-end using a waveform-based encoder-decoder architecture, later combined with spectrogram processing in HTDemucs.
 
 The practical result was that quality crossed a threshold where the outputs were actually usable for music production purposes, not just as research curiosities.
 
@@ -107,11 +107,11 @@ There are three main axes along which stem splitting tools differ: online vs des
 
 **Online tools** run in a browser, require no installation, and work on any computer. The tradeoff is that you're uploading your audio to someone's servers, which matters if you're working with unreleased music. Processing speed depends on server load. [Online vs desktop stem splitters]({{ '/online-vs-desktop-stem-splitters/' | relative_url }}) covers the full comparison.
 
-**Desktop tools** run locally, which means your audio never leaves your machine. They're generally faster once set up (especially with a good GPU), allow batch processing, and give you more control over which model you use. [UVR5 (Ultimate Vocal Remover)](https://github.com/Anjok07/ultimatevocalremovergui) is the most flexible free desktop option, supporting Demucs, MDX-Net and several other models.
+**Desktop tools** run locally, which means your audio never leaves your machine. They're generally faster once set up (especially with a good GPU), allow batch processing, and give you more control over which model you use. [UVR5 (Ultimate Vocal Remover)](/tools/#uvr5) is the most flexible free desktop option, supporting Demucs, MDX-Net and several other models.
 
 **Free vs paid** is a real distinction. Free tools work, but paid tools often offer better models, faster processing, cleaner UX, and features like stem refinement and noise reduction. [The free vs paid breakdown]({{ '/free-vs-paid-stem-splitters/' | relative_url }}) walks through exactly what you get at each price point.
 
-**DAW-native** integration is becoming more common. [Ableton Live 12's built-in stem separation](https://www.ableton.com/en/live-manual/12/stem-separation/) lets you separate a clip directly in the arrangement view without leaving the DAW. Logic Pro has had a vocal separation feature for several versions. These integrations are convenient, but the quality doesn't always match dedicated tools.
+**DAW-native** integration is becoming more common. [Ableton Live 12's built-in stem separation](/tools/#ableton-live-12) lets you separate a clip directly in the arrangement view without leaving the DAW. Logic Pro has had a vocal separation feature for several versions. These integrations are convenient, but the quality doesn't always match dedicated tools.
 
 For most people who want to try this without installing anything, [StemSplit.io](https://stemsplit.io) is the online tool to start with. It uses HTDemucs under the hood, processes quickly, and the interface is straightforward. Drag in a file, get 4 stems back.
 

@@ -16,7 +16,7 @@ The classic approach to sampling involves flipping a section of the original rec
 
 Stem splitting changes the raw material. Pull the guitar out as its own track, and now you're working with something close to a direct recording of that performance. The texture is there, the playing style is there, but the congestion of the original mix isn't.
 
-The [Meta AI Demucs repository](https://github.com/facebookresearch/demucs) is where most of the separation technology underlying these tools originates. The academic work on source separation (see the [HTDemucs paper on arXiv](https://arxiv.org/abs/2111.03600)) has moved fast enough that what's available in consumer tools today would have seemed unrealistic just a few years ago.
+The [Meta AI Demucs repository](/tools/#demucs) is where most of the separation technology underlying these tools originates. The academic work on source separation (see the [HTDemucs paper on arXiv](https://arxiv.org/abs/2111.03600)) has moved fast enough that what's available in consumer tools today would have seemed unrealistic just a few years ago.
 
 ## Finding usable elements inside finished tracks
 
