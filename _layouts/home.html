@@ -6,19 +6,62 @@ layout: default
     <div class="hero-tag">AI Stem Splitter Reviews &amp; Guides</div>
     <h1 class="hero-title">{{ site.title }}</h1>
     <p class="hero-desc">{{ site.description }}</p>
+    <div class="hero-links">
+      <a href="/faq/" class="hero-link-card">
+        <div class="hero-link-title">FAQ</div>
+        <div class="hero-link-sub">Common questions answered</div>
+        <span class="hero-link-arrow">→</span>
+      </a>
+      <a href="/tools/" class="hero-link-card">
+        <div class="hero-link-title">Tools</div>
+        <div class="hero-link-sub">Every major tool compared</div>
+        <span class="hero-link-arrow">→</span>
+      </a>
+      <a href="/glossary/" class="hero-link-card">
+        <div class="hero-link-title">Glossary</div>
+        <div class="hero-link-sub">36 terms defined</div>
+        <span class="hero-link-arrow">→</span>
+      </a>
+    </div>
   </div>
 </section>
 
 <section class="posts-section">
   <div class="container">
+
+    {% assign featured_post = site.posts | first %}
+    {% if featured_post %}
+    <article class="post-card post-card-featured">
+      <span class="post-featured-label">Latest</span>
+      <div class="post-card-meta">
+        <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
+        {% assign ftag = featured_post.tags | first %}
+        {% if ftag and ftag != "Other" %}
+        <span class="post-tag-badge">{{ ftag }}</span>
+        {% endif %}
+      </div>
+      <h2 class="post-card-title post-card-title-lg">
+        <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a>
+      </h2>
+      {% if featured_post.excerpt %}
+      <p class="post-card-excerpt">{{ featured_post.excerpt | strip_html | truncate: 280 }}</p>
+      {% endif %}
+      <a href="{{ featured_post.url | relative_url }}" class="read-more">Read article →</a>
+    </article>
+    {% endif %}
+
     <div class="section-header">
-      <h2>Latest Articles</h2>
+      <h2>Recent Articles</h2>
     </div>
     <div class="post-list">
-      {% for post in site.posts %}
+      {% for post in site.posts offset:1 limit:6 %}
       <article class="post-card">
         <div class="post-card-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% assign ptag = post.tags | first %}
+          {% if ptag and ptag != "Other" %}
+          <span class="post-tag-badge">{{ ptag }}</span>
+          {% endif %}
         </div>
         <h3 class="post-card-title">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -30,6 +73,11 @@ layout: default
       </article>
       {% endfor %}
     </div>
+
+    <div class="view-all-row">
+      <a href="/archive" class="view-all-link">View all {{ site.posts | size }} articles →</a>
+    </div>
+
   </div>
 </section>
 
