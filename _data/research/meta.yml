@@ -1,0 +1,7 @@
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T11:10:00.772663'
+demucs_version: 4.0.1
+dataset: MUSDB18-7s
+device: Apple M4 MPS
+tests_completed:
+- reconstruction

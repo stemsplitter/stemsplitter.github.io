@@ -1,0 +1,36 @@
+title: How Much Information Does Stem Separation Actually Lose?
+subtitle: Reconstruction fidelity across 2-stem, 4-stem, and 6-stem modes on 50 MUSDB18-7s
+  tracks
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T11:09:58'
+dataset: MUSDB18-7s
+dataset_url: https://zenodo.org/record/1117372
+n_tracks: 50
+key_finding: Splitting into 6 stems vs 4 stems increases reconstruction error by 1.2
+  dB (-21.6 dB for 4-stem vs -22.8 dB for 6-stem relative to original)
+methodology_note: Each mixture was separated into stems, which were then summed back.
+  The difference between the reconstruction and the original mix measures information
+  loss. Lower MSE, higher correlation, and lower dB difference all indicate better
+  reconstruction fidelity.
+modes:
+- stems: 2
+  model: htdemucs_ft
+  label: 2-stem (vocals + accompaniment)
+  n_tracks: 50
+  mean_mse: 0.000169
+  mean_correlation: 0.9961
+  mean_db_difference: -21.7
+- stems: 4
+  model: htdemucs_ft
+  label: 4-stem (vocals, drums, bass, other)
+  n_tracks: 50
+  mean_mse: 0.000169
+  mean_correlation: 0.996
+  mean_db_difference: -21.6
+- stems: 6
+  model: htdemucs_6s
+  label: 6-stem (+ guitar, piano)
+  n_tracks: 50
+  mean_mse: 0.000138
+  mean_correlation: 0.9967
+  mean_db_difference: -22.8
