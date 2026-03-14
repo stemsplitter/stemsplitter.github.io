@@ -1,0 +1,227 @@
+title: What Makes a Track Hard to Separate? Predicting HTDemucs Quality
+subtitle: Audio feature correlation with separation SDR across 50 MUSDB18-7s tracks
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T12:12:11'
+model: htdemucs_ft
+dataset: MUSDB18-7s
+n_tracks: 50
+vocal_sdr_range:
+  min: -19.06
+  max: 16.42
+  median: 8.8
+  std: 5.74
+key_finding: The strongest predictor of vocal SDR is 'Chroma variance (harmonic complexity)'
+  (r = 0.522). Tracks with higher harmonic-to-percussive ratio tend to separate more
+  cleanly.
+correlations:
+- &id004
+  feature: rms_energy
+  feature_label: Overall loudness (RMS energy)
+  stem: vocals
+  pearson_r: -0.235
+  n: 50
+- feature: rms_energy
+  feature_label: Overall loudness (RMS energy)
+  stem: drums
+  pearson_r: -0.133
+  n: 50
+- feature: rms_energy
+  feature_label: Overall loudness (RMS energy)
+  stem: bass
+  pearson_r: 0.029
+  n: 50
+- feature: rms_energy
+  feature_label: Overall loudness (RMS energy)
+  stem: other
+  pearson_r: -0.228
+  n: 50
+- feature: spectral_centroid_mean
+  feature_label: Spectral brightness (centroid mean)
+  stem: vocals
+  pearson_r: -0.12
+  n: 50
+- feature: spectral_centroid_mean
+  feature_label: Spectral brightness (centroid mean)
+  stem: drums
+  pearson_r: 0.09
+  n: 50
+- feature: spectral_centroid_mean
+  feature_label: Spectral brightness (centroid mean)
+  stem: bass
+  pearson_r: -0.025
+  n: 50
+- feature: spectral_centroid_mean
+  feature_label: Spectral brightness (centroid mean)
+  stem: other
+  pearson_r: -0.481
+  n: 50
+- &id002
+  feature: spectral_flatness_mean
+  feature_label: Spectral flatness (tonal vs noisy)
+  stem: vocals
+  pearson_r: -0.265
+  n: 50
+- feature: spectral_flatness_mean
+  feature_label: Spectral flatness (tonal vs noisy)
+  stem: drums
+  pearson_r: 0.213
+  n: 50
+- feature: spectral_flatness_mean
+  feature_label: Spectral flatness (tonal vs noisy)
+  stem: bass
+  pearson_r: -0.021
+  n: 50
+- feature: spectral_flatness_mean
+  feature_label: Spectral flatness (tonal vs noisy)
+  stem: other
+  pearson_r: -0.408
+  n: 50
+- &id003
+  feature: zcr_mean
+  feature_label: Zero crossing rate (noisiness)
+  stem: vocals
+  pearson_r: -0.256
+  n: 50
+- feature: zcr_mean
+  feature_label: Zero crossing rate (noisiness)
+  stem: drums
+  pearson_r: 0.153
+  n: 50
+- feature: zcr_mean
+  feature_label: Zero crossing rate (noisiness)
+  stem: bass
+  pearson_r: -0.101
+  n: 50
+- feature: zcr_mean
+  feature_label: Zero crossing rate (noisiness)
+  stem: other
+  pearson_r: -0.368
+  n: 50
+- feature: harmonic_energy
+  feature_label: Harmonic energy
+  stem: vocals
+  pearson_r: -0.173
+  n: 50
+- feature: harmonic_energy
+  feature_label: Harmonic energy
+  stem: drums
+  pearson_r: -0.221
+  n: 50
+- feature: harmonic_energy
+  feature_label: Harmonic energy
+  stem: bass
+  pearson_r: 0.161
+  n: 50
+- feature: harmonic_energy
+  feature_label: Harmonic energy
+  stem: other
+  pearson_r: -0.107
+  n: 50
+- feature: percussive_energy
+  feature_label: Percussive energy
+  stem: vocals
+  pearson_r: -0.145
+  n: 50
+- feature: percussive_energy
+  feature_label: Percussive energy
+  stem: drums
+  pearson_r: 0.191
+  n: 50
+- feature: percussive_energy
+  feature_label: Percussive energy
+  stem: bass
+  pearson_r: -0.194
+  n: 50
+- feature: percussive_energy
+  feature_label: Percussive energy
+  stem: other
+  pearson_r: -0.335
+  n: 50
+- feature: hp_ratio
+  feature_label: Harmonic-to-percussive ratio
+  stem: vocals
+  pearson_r: -0.201
+  n: 50
+- feature: hp_ratio
+  feature_label: Harmonic-to-percussive ratio
+  stem: drums
+  pearson_r: -0.205
+  n: 50
+- feature: hp_ratio
+  feature_label: Harmonic-to-percussive ratio
+  stem: bass
+  pearson_r: 0.303
+  n: 50
+- feature: hp_ratio
+  feature_label: Harmonic-to-percussive ratio
+  stem: other
+  pearson_r: 0.207
+  n: 50
+- feature: onset_density
+  feature_label: Onset density (rhythmic activity)
+  stem: vocals
+  pearson_r: -0.181
+  n: 50
+- feature: onset_density
+  feature_label: Onset density (rhythmic activity)
+  stem: drums
+  pearson_r: -0.08
+  n: 50
+- feature: onset_density
+  feature_label: Onset density (rhythmic activity)
+  stem: bass
+  pearson_r: -0.333
+  n: 50
+- feature: onset_density
+  feature_label: Onset density (rhythmic activity)
+  stem: other
+  pearson_r: -0.163
+  n: 50
+- &id001
+  feature: chroma_variance
+  feature_label: Chroma variance (harmonic complexity)
+  stem: vocals
+  pearson_r: 0.522
+  n: 50
+- feature: chroma_variance
+  feature_label: Chroma variance (harmonic complexity)
+  stem: drums
+  pearson_r: 0.095
+  n: 50
+- feature: chroma_variance
+  feature_label: Chroma variance (harmonic complexity)
+  stem: bass
+  pearson_r: 0.142
+  n: 50
+- feature: chroma_variance
+  feature_label: Chroma variance (harmonic complexity)
+  stem: other
+  pearson_r: 0.175
+  n: 50
+- &id005
+  feature: vocal_band_energy
+  feature_label: Vocal band energy (200-3kHz)
+  stem: vocals
+  pearson_r: -0.221
+  n: 50
+- feature: vocal_band_energy
+  feature_label: Vocal band energy (200-3kHz)
+  stem: drums
+  pearson_r: -0.28
+  n: 50
+- feature: vocal_band_energy
+  feature_label: Vocal band energy (200-3kHz)
+  stem: bass
+  pearson_r: -0.119
+  n: 50
+- feature: vocal_band_energy
+  feature_label: Vocal band energy (200-3kHz)
+  stem: other
+  pearson_r: 0.033
+  n: 50
+top_vocal_predictors:
+- *id001
+- *id002
+- *id003
+- *id004
+- *id005

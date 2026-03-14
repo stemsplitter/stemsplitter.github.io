@@ -1,0 +1,40 @@
+title: HTDemucs Performance by Track Characteristics
+subtitle: Genre breakdown and quality tier analysis on 50 MUSDB18-7s tracks
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T12:11:22'
+model: htdemucs_ft
+dataset: MUSDB18-7s
+n_tracks: 50
+has_genre_data: false
+key_finding: Separation quality varies significantly across track types. Tracks in
+  the top-quality tier average 9.44 dB mean SDR, vs 7.22 dB for the lowest tier.
+genres:
+- label: Mixed / Unlabelled
+  n_tracks: 50
+  sdr_vocals: 8.8
+  sdr_drums: 10.82
+  sdr_bass: 9.4
+  sdr_other: 3.9
+  sdr_mean: 8.23
+quality_tiers:
+- label: High separation quality (top third)
+  n_tracks: 17
+  sdr_vocals: 12.55
+  sdr_drums: 10.6
+  sdr_bass: 10.12
+  sdr_other: 4.51
+  sdr_mean: 9.44
+- label: Mid separation quality (middle third)
+  n_tracks: 16
+  sdr_vocals: 8.8
+  sdr_drums: 11.28
+  sdr_bass: 8.98
+  sdr_other: 5.78
+  sdr_mean: 8.71
+- label: Low separation quality (bottom third)
+  n_tracks: 17
+  sdr_vocals: 5.81
+  sdr_drums: 10.72
+  sdr_bass: 8.76
+  sdr_other: 3.6
+  sdr_mean: 7.22
