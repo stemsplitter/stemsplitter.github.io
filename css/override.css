@@ -720,6 +720,44 @@ hr {
 }
 
 /* =========================================
+   ABOUT PAGE
+   ========================================= */
+.about-content {
+  max-width: 680px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.about-content h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading);
+  letter-spacing: -0.01em;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-content p {
+  margin-bottom: 1.2rem;
+  color: var(--text);
+}
+
+.about-content a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: rgba(34, 211, 238, 0.35);
+  text-underline-offset: 3px;
+  transition: color var(--ease), text-decoration-color var(--ease);
+}
+
+.about-content a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+}
+
+/* =========================================
    FOOTER
    ========================================= */
 .site-footer {

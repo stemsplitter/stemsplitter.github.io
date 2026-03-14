@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "About", "item": "{{ site.url }}/about/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/about/",
+  "name": "Aaron Michaels",
+  "url": "{{ site.url }}/about/",
+  "jobTitle": "Music Producer and Audio Engineer",
+  "description": "Music producer and audio engineer writing about AI stem separation technology, tools, and techniques. Independent reviewer covering stem splitter software for music producers, audio engineers, and musicians.",
+  "knowsAbout": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#stem-splitter",
+      "name": "Stem splitter",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#music-source-separation",
+      "name": "Music source separation",
+      "inDefinedTermSet": "{{ site.url }}/glossary/",
+      "sameAs": "http://dbpedia.org/resource/Audio_source_separation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#htdemucs",
+      "name": "HTDemucs",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#daw",
+      "name": "DAW",
+      "inDefinedTermSet": "{{ site.url }}/glossary/",
+      "sameAs": "http://dbpedia.org/resource/Digital_audio_workstation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#vocal-isolation",
+      "name": "Vocal isolation",
+      "inDefinedTermSet": "{{ site.url }}/glossary/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site.url }}/glossary/#multitrack-recording",
+      "name": "Multitrack recording",
+      "inDefinedTermSet": "{{ site.url }}/glossary/",
+      "sameAs": "http://dbpedia.org/resource/Multitrack_recording"
+    },
+    "Music Production",
+    "AI Audio Technology",
+    "Audio Engineering",
+    "Neural Source Separation"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "publishingPrinciples": "{{ site.url }}/about/"
+}
+</script>
+
+<div class="page-wrapper">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+    <div class="about-content">
+      {{ content }}
+    </div>
+  </div>
+</div>
