@@ -1108,3 +1108,206 @@ hr {
     text-transform: uppercase;
   }
 }
+
+/* Tool Cards */
+.tools-content .tool-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 0.85rem;
+  transition: border-color var(--ease), box-shadow var(--ease);
+  position: relative;
+}
+
+.tools-content .tool-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06);
+}
+
+.tools-content .tool-card-featured {
+  border-color: var(--accent-border);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(34, 211, 238, 0.04) 100%);
+}
+
+.tools-content .tool-featured-label {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 0.18rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid var(--accent-border);
+}
+
+.tools-content .tool-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tools-content .tool-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--heading);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.tools-content .tool-name a {
+  color: var(--heading);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color var(--ease);
+}
+
+.tools-content .tool-name a:hover {
+  color: var(--accent);
+}
+
+.tools-content .tool-badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+}
+
+.tools-content .badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.tools-content .badge-online {
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+.tools-content .badge-desktop {
+  background: rgba(139, 92, 246, 0.1);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.tools-content .badge-selfhosted {
+  background: rgba(249, 115, 22, 0.1);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.25);
+}
+
+.tools-content .badge-daw {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.tools-content .badge-free {
+  background: rgba(16, 185, 129, 0.08);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.tools-content .badge-paid {
+  background: rgba(248, 113, 113, 0.08);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.tools-content .badge-credits {
+  background: rgba(251, 191, 36, 0.08);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.tools-content .tool-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 0.65rem;
+  line-height: 1.5;
+}
+
+.tools-content .tool-desc {
+  color: var(--text);
+  font-size: 0.93rem;
+  line-height: 1.72;
+  margin: 0 0 1rem;
+}
+
+.tools-content .tool-desc a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+.tools-content .tool-desc a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+.tools-content .tool-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.tools-content .tool-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color var(--ease);
+  line-height: 1;
+}
+
+.tools-content .tool-link:hover {
+  color: var(--link-hover);
+}
+
+.tools-content .tool-more {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--ease), border-color var(--ease);
+  line-height: 1;
+}
+
+.tools-content .tool-more:hover {
+  color: var(--text);
+  border-bottom-color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .tools-content .tool-card {
+    padding: 1.25rem 1.25rem;
+  }
+  .tools-content .tool-featured-label {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+  }
+  .tools-content .tool-card-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
