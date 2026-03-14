@@ -18,12 +18,12 @@ from tqdm import tqdm
 
 from utils import compute_sdr, get_device, load_model, load_musdb, median_sdr, save_yaml, separate_track
 
-MODELS = ["htdemucs", "htdemucs_ft", "htdemucs_6s", "htdemucs_mmi"]
+MODELS = ["htdemucs", "htdemucs_ft", "htdemucs_6s", "hdemucs_mmi"]
 MODEL_LABELS = {
-    "htdemucs":     "HTDemucs (base)",
-    "htdemucs_ft":  "HTDemucs FT (fine-tuned)",
-    "htdemucs_6s":  "HTDemucs 6S (6-stem)",
-    "htdemucs_mmi": "HTDemucs MMI (extended data)",
+    "htdemucs":    "HTDemucs (base)",
+    "htdemucs_ft": "HTDemucs FT (fine-tuned)",
+    "htdemucs_6s": "HTDemucs 6S (6-stem)",
+    "hdemucs_mmi": "Hybrid Demucs MMI (extended data)",
 }
 STEMS = ["vocals", "drums", "bass", "other"]
 

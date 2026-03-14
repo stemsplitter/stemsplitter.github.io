@@ -14,7 +14,7 @@ All four publicly available HTDemucs variants were evaluated on the full 50-trac
 - `htdemucs` -- base hybrid transformer-convolutional model
 - `htdemucs_ft` -- fine-tuned on additional data, generally higher SDR on standard benchmarks
 - `htdemucs_6s` -- 6-stem variant (adds guitar and piano stems); only standard 4-stem SDR reported for comparability
-- `htdemucs_mmi` -- variant trained with [multi-mirror input](https://github.com/facebookresearch/demucs) for better generalisation
+- `hdemucs_mmi` -- the older Hybrid Demucs (non-transformer) variant trained with [multi-mirror input](https://github.com/facebookresearch/demucs) on extra data
 
 **Device:** Apple M4 MPS. Models run at default segment size.
 

@@ -1,0 +1,51 @@
+title: HTDemucs Model Variant Comparison
+subtitle: SDR and processing speed across 4 model variants on 50 MUSDB18-7s test tracks
+run_date: March 14, 2026
+run_timestamp: '2026-03-14T12:11:19'
+device: Apple M4 MPS
+dataset: MUSDB18-7s
+dataset_url: https://zenodo.org/record/1117372
+n_tracks: 50
+stems:
+- vocals
+- drums
+- bass
+- other
+key_finding: HTDemucs (base) achieves the highest mean SDR at 8.38 dB
+models:
+- id: htdemucs
+  label: HTDemucs (base)
+  sdr_vocals: 8.86
+  sdr_drums: 10.52
+  sdr_bass: 9.56
+  sdr_other: 4.56
+  sdr_mean: 8.38
+  avg_time_seconds: 1.8
+  n_tracks: 50
+- id: htdemucs_ft
+  label: HTDemucs FT (fine-tuned)
+  sdr_vocals: 8.8
+  sdr_drums: 10.82
+  sdr_bass: 9.4
+  sdr_other: 3.9
+  sdr_mean: 8.23
+  avg_time_seconds: 6.4
+  n_tracks: 50
+- id: htdemucs_6s
+  label: HTDemucs 6S (6-stem)
+  sdr_vocals: 8.53
+  sdr_drums: 10.04
+  sdr_bass: 8.52
+  sdr_other: -3.42
+  sdr_mean: 5.92
+  avg_time_seconds: 1.6
+  n_tracks: 50
+- id: hdemucs_mmi
+  label: Hybrid Demucs MMI (extended data)
+  sdr_vocals: 8.78
+  sdr_drums: 10.02
+  sdr_bass: 8.43
+  sdr_other: 4.24
+  sdr_mean: 7.87
+  avg_time_seconds: 3.3
+  n_tracks: 50
