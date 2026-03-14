@@ -8,7 +8,7 @@ about_terms: [online-stem-splitter, stem-splitter, vocal-isolation]
 mentions_terms: [ai-music-splitter, bleed, htdemucs, mdx-net]
 ---
 
-Both LALAL.AI and StemSplit.io are browser-based tools, no installation needed, and both produce output quality that would have seemed unlikely five years ago. They're aimed at somewhat different users though, and choosing between them comes down to what you're actually trying to do with the stems.
+Both [LALAL.AI](/tools/#lalalai) and StemSplit.io are browser-based tools, no installation needed, and both produce output quality that would have seemed unlikely five years ago. They're aimed at somewhat different users though, and choosing between them comes down to what you're actually trying to do with the stems.
 
 ## What they have in common
 
@@ -44,7 +44,7 @@ For a more thorough breakdown of free and paid options across the broader landsc
 
 ## Who should use LALAL.AI
 
-If your primary use case is clean vocal isolation from vocal-heavy material, LALAL.AI is worth trying first. It also suits users who process audio at irregular volumes and prefer paying per use rather than committing to a monthly fee. Some commercial users prefer the metered model specifically because it maps cleanly to per-project cost tracking.
+If your primary use case is clean vocal isolation from vocal-heavy material, [LALAL.AI](/tools/#lalalai) is worth trying first. It also suits users who process audio at irregular volumes and prefer paying per use rather than committing to a monthly fee. Some commercial users prefer the metered model specifically because it maps cleanly to per-project cost tracking.
 
 ## Who should use StemSplit.io
 
