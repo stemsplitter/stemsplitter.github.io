@@ -20,7 +20,7 @@ Aaron tests tools against a consistent reference set of tracks before publishing
 - Tool comparisons and reviews: Demucs vs Spleeter, free vs paid options, online vs desktop, LALAL.AI vs StemSplit.io
 - Use cases: remixing, sampling, DJs, music learning, audio restoration, beatmaking
 - Glossary of key terms in stem splitting and music source separation
-- Original benchmark research: 5 HTDemucs tests on MUSDB18-7s with reproducible scripts, covering input format quality, model comparison, reconstruction fidelity, track characteristics, and complexity prediction
+- Original benchmark research: 6 tests on MUSDB18-7s with reproducible scripts, covering HTDemucs input format quality, model comparison, reconstruction fidelity, track characteristics, complexity prediction, and a Spleeter vs HTDemucs head-to-head on Apple M4
 
 ## Important Pages
 
@@ -28,7 +28,7 @@ Aaron tests tools against a consistent reference set of tracks before publishing
 - [FAQ]({{ site.url }}/faq/): Answers to the most common stem splitter questions, including what the best options are and how they work
 - [Tools]({{ site.url }}/tools/): Comparison of every major stem splitter tool with pricing and use case guidance
 - [Glossary]({{ site.url }}/glossary/): Definitions of technical terms used in stem splitting and AI audio tools
-- [Research]({{ site.url }}/research/): Original HTDemucs benchmark data -- format quality, model comparison, reconstruction fidelity, track characteristics, complexity prediction
+- [Research]({{ site.url }}/research/): Original benchmark data -- HTDemucs format quality, model comparison, reconstruction fidelity, track characteristics, complexity prediction, and Spleeter vs HTDemucs head-to-head
 - [Blog & Guides]({{ site.url }}/archive): Full archive of all articles
 - [Sitemap]({{ site.url }}/sitemap.xml)
 
@@ -36,12 +36,13 @@ Aaron tests tools against a consistent reference set of tracks before publishing
 
 Original benchmark data generated locally on Apple M4 MPS using the MUSDB18-7s dataset (7-second clips of the standard MUSDB18 benchmark for music source separation). All measurement code is published in the site repository. Metric: BSSEval v4 SDR via mir_eval.
 
-{% assign t1 = site.data.research.format_quality %}{% assign t2 = site.data.research.model_comparison %}{% assign t3 = site.data.research.genre_performance %}{% assign t4 = site.data.research.reconstruction %}{% assign t5 = site.data.research.complexity %}
+{% assign t1 = site.data.research.format_quality %}{% assign t2 = site.data.research.model_comparison %}{% assign t3 = site.data.research.genre_performance %}{% assign t4 = site.data.research.reconstruction %}{% assign t5 = site.data.research.complexity %}{% assign t6 = site.data.research.spleeter_comparison %}
 {% if t4 %}- **Reconstruction fidelity ({{ t4.run_date }}):** {{ t4.key_finding }} Full data: {{ site.url }}/research/reconstruction-fidelity/
 {% endif %}{% if t1 %}- **Input format quality ({{ t1.run_date }}):** {{ t1.key_finding }} Full data: {{ site.url }}/research/format-quality/
 {% endif %}{% if t2 %}- **Model comparison ({{ t2.run_date }}):** {{ t2.key_finding }} Full data: {{ site.url }}/research/model-comparison/
 {% endif %}{% if t3 %}- **Track characteristics ({{ t3.run_date }}):** {{ t3.key_finding }} Full data: {{ site.url }}/research/genre-performance/
 {% endif %}{% if t5 %}- **Complexity prediction ({{ t5.run_date }}):** {{ t5.key_finding }} Full data: {{ site.url }}/research/complexity-prediction/
+{% endif %}{% if t6 %}- **Spleeter vs HTDemucs on Apple M4 ({{ t6.run_date }}):** {{ t6.key_finding }} Full data: {{ site.url }}/research/spleeter-vs-htdemucs/
 {% endif %}
 Raw YAML data files: https://github.com/stemsplitter/stemsplitter.github.io/tree/main/_data/research
 

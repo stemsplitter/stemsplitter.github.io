@@ -330,6 +330,75 @@ layout: default
     </div>
     {% endif %}
 
+    {% if page.data_key == "spleeter_comparison" and data.models %}
+    <h2 class="research-table-heading">Quality and Speed: Spleeter vs HTDemucs</h2>
+    <p class="research-table-note">SDR values in dB (median across {{ data.n_tracks }} tracks). Time is average seconds per 7-second clip. Spleeter: TensorFlow CPU. HTDemucs: PyTorch MPS.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Device</th>
+            <th>Vocals SDR</th>
+            <th>Drums SDR</th>
+            <th>Bass SDR</th>
+            <th>Other SDR</th>
+            <th>Mean SDR</th>
+            <th>Avg Time (s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for model in data.models %}
+          <tr>
+            <td><strong>{{ model.label }}</strong></td>
+            <td>{{ model.device }}</td>
+            <td>{{ model.sdr_vocals }}</td>
+            <td>{{ model.sdr_drums }}</td>
+            <td>{{ model.sdr_bass }}</td>
+            <td>{{ model.sdr_other }}</td>
+            <td><strong>{{ model.sdr_mean }}</strong></td>
+            <td>{{ model.avg_time_seconds }}s</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if data.head_to_head %}
+    <h2 class="research-table-heading">Stem-by-Stem Comparison</h2>
+    <p class="research-table-note">Delta = HTDemucs SDR minus Spleeter SDR. Positive delta means HTDemucs wins on that stem.</p>
+    <div class="research-table-wrap">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Stem</th>
+            <th>Spleeter SDR</th>
+            <th>HTDemucs SDR</th>
+            <th>Delta</th>
+            <th>Winner</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in data.head_to_head %}
+          <tr>
+            <td>{{ row.stem | capitalize }}</td>
+            <td>{{ row.spleeter_sdr }}</td>
+            <td>{{ row.htdemucs_sdr }}</td>
+            <td class="{% if row.delta_htdemucs_minus_spleeter > 0 %}delta-good{% elsif row.delta_htdemucs_minus_spleeter < -0.5 %}delta-bad{% else %}delta-neutral{% endif %}">
+              {% if row.delta_htdemucs_minus_spleeter > 0 %}+{% endif %}{{ row.delta_htdemucs_minus_spleeter }} dB
+            </td>
+            <td>{{ row.winner | capitalize }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if data.speedup_ratio %}
+    <p class="research-table-note" style="margin-top:0.75rem;">Speed-up: HTDemucs processed each clip <strong>{{ data.speedup_ratio }}x faster</strong> than Spleeter on this hardware.</p>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+
     {% endif %}
 
     <!-- ===================== CITATION + RAW DATA ===================== -->

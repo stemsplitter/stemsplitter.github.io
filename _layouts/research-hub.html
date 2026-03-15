@@ -93,6 +93,13 @@ layout: default
       "headline": "What Makes a Track Hard to Separate?",
       "url": "{{ site.url }}/research/complexity-prediction/"{% if site.data.research.complexity %},
       "abstract": "{{ site.data.research.complexity.key_finding | escape }}"{% endif %}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "{{ site.url }}/research/spleeter-vs-htdemucs/",
+      "headline": "Spleeter vs HTDemucs: Quality and Speed on Apple M4",
+      "url": "{{ site.url }}/research/spleeter-vs-htdemucs/"{% if site.data.research.spleeter_comparison %},
+      "abstract": "{{ site.data.research.spleeter_comparison.key_finding | escape }}"{% endif %}
     }
   ],
   "citation": [
@@ -190,6 +197,18 @@ layout: default
         <div class="research-card-title">What Predicts Separation Quality</div>
         {% if t5 %}
         <div class="research-card-finding">{{ t5.key_finding | truncate: 120 }}</div>
+        {% else %}
+        <div class="research-card-pending-label">Results pending</div>
+        {% endif %}
+        <span class="research-card-arrow">View data →</span>
+      </a>
+
+      {% assign t6 = site.data.research.spleeter_comparison %}
+      <a href="/research/spleeter-vs-htdemucs/" class="research-card {% unless t6 %}research-card-pending{% endunless %}">
+        <div class="research-card-number">Test 6</div>
+        <div class="research-card-title">Spleeter vs HTDemucs on Apple M4</div>
+        {% if t6 %}
+        <div class="research-card-finding">{{ t6.key_finding | truncate: 120 }}</div>
         {% else %}
         <div class="research-card-pending-label">Results pending</div>
         {% endif %}
