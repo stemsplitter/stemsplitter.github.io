@@ -1,0 +1,59 @@
+title: 'Spleeter vs HTDemucs: Quality and Speed on Apple M4'
+subtitle: Head-to-head comparison on 50 MUSDB18-7s test tracks -- SDR quality and
+  processing time
+run_date: March 15, 2026
+run_timestamp: '2026-03-15T14:45:58'
+device_htdemucs: Apple M4 MPS
+device_spleeter: Apple M4 CPU (TensorFlow)
+dataset: MUSDB18-7s
+dataset_url: https://zenodo.org/record/1117372
+n_tracks: 50
+stems:
+- vocals
+- drums
+- bass
+- other
+key_finding: See results table for SDR and speed comparison.
+speedup_ratio: null
+models:
+- id: spleeter_4stems
+  label: Spleeter (4-stem)
+  device: CPU
+  sdr_vocals: null
+  sdr_drums: null
+  sdr_bass: null
+  sdr_other: null
+  sdr_mean: null
+  avg_time_seconds: null
+  n_tracks: 0
+- id: htdemucs
+  label: HTDemucs (base)
+  device: MPS
+  sdr_vocals: 8.91
+  sdr_drums: 10.54
+  sdr_bass: 9.49
+  sdr_other: 4.49
+  sdr_mean: 8.36
+  avg_time_seconds: 1.47
+  n_tracks: 50
+head_to_head:
+- stem: vocals
+  spleeter_sdr: null
+  htdemucs_sdr: 8.91
+  delta_htdemucs_minus_spleeter: null
+  winner: null
+- stem: drums
+  spleeter_sdr: null
+  htdemucs_sdr: 10.54
+  delta_htdemucs_minus_spleeter: null
+  winner: null
+- stem: bass
+  spleeter_sdr: null
+  htdemucs_sdr: 9.49
+  delta_htdemucs_minus_spleeter: null
+  winner: null
+- stem: other
+  spleeter_sdr: null
+  htdemucs_sdr: 4.49
+  delta_htdemucs_minus_spleeter: null
+  winner: null
